@@ -10,11 +10,12 @@ function normalize( word: string ) {
 export function countWords( text: string = text_chain ) {
 
     let counterList: { [ key: string ]: number } = {};
-    const wordsList = text.split(' ');
-    
+    const wordsList = text.trim().split(' ');
+
     wordsList.map( word => {
         normalize(word) in counterList ? 
-            ++counterList[normalize(word)] : counterList[normalize(word)] = 1;
+            ++counterList[normalize(word)] : 
+            counterList[normalize(word)] = 1;
     } );
 
     return counterList;

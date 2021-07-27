@@ -9,10 +9,11 @@ function normalize(word) {
 }
 function countWords(text = text_chain) {
     let counterList = {};
-    const wordsList = text.split(' ');
+    const wordsList = text.trim().split(' ');
     wordsList.map(word => {
         normalize(word) in counterList ?
-            ++counterList[normalize(word)] : counterList[normalize(word)] = 1;
+            ++counterList[normalize(word)] :
+            counterList[normalize(word)] = 1;
     });
     return counterList;
 }
