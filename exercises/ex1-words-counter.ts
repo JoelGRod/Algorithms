@@ -7,6 +7,7 @@ function normalize( word: string ) {
     return word.toLowerCase().replace(/[!.,]/g, '');
 }
 
+// O(n)
 export function countWords( text: string = text_chain ) {
 
     let counterList: { [ key: string ]: number } = {};
