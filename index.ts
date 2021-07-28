@@ -1,5 +1,6 @@
 import { countWords } from './exercises/ex1-words-counter';
 import * as ex2 from './exercises/ex2-multiplication-table';
+import { isPalindrome } from './exercises/ex3-palindrome';
 
 console.log("Job Interview exercises in TypeScript");
 
@@ -16,4 +17,8 @@ console.log("Ex 2: Create the multiplication table of a specific number \n" +
             "----------------------------------------------------------");
 ex2.printResults(ex2.multiplyNumbers(5));
 
+// Ex 3: Find out if a string is palindrome or not
+console.log("Ex 3: Find out if a string is palindrome or not \n" +
+            "----------------------------------------------------------");
+console.log(isPalindrome('otto'));
 
