@@ -2,10 +2,6 @@
  * Given a number return its complete multiplication table.
  */
 
-export function printResults( resultsList: string[] ): void {
-    resultsList.map( result => console.log(result) );
-}
-
 export function multiplyNumbers(digit: number): string[] {
     let multiplicationResults: string[] = [];
 

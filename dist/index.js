@@ -19,8 +19,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const basicHelpers = __importStar(require("./shared/helpers/basic-helpers"));
 const ex1_words_counter_1 = require("./exercises/ex1-words-counter");
-const ex2 = __importStar(require("./exercises/ex2-multiplication-table"));
+const ex2_multiplication_table_1 = require("./exercises/ex2-multiplication-table");
 const ex3_palindrome_1 = require("./exercises/ex3-palindrome");
 console.log("Job Interview exercises in TypeScript");
 // Ex 1: Count words from pre-defined text
@@ -33,7 +34,7 @@ console.log(ex1_words_counter_1.countWords(testText));
 // Ex 2: Create the multiplication table of a specific number
 console.log("Ex 2: Create the multiplication table of a specific number \n" +
     "----------------------------------------------------------");
-ex2.printResults(ex2.multiplyNumbers(5));
+basicHelpers.printTextListResults(ex2_multiplication_table_1.multiplyNumbers(5));
 // Ex 3: Find out if a string is palindrome or not
 console.log("Ex 3: Find out if a string is palindrome or not \n" +
     "----------------------------------------------------------");

@@ -3,11 +3,7 @@
  * Given a number return its complete multiplication table.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.multiplyNumbers = exports.printResults = void 0;
-function printResults(resultsList) {
-    resultsList.map(result => console.log(result));
-}
-exports.printResults = printResults;
+exports.multiplyNumbers = void 0;
 function multiplyNumbers(digit) {
     let multiplicationResults = [];
     multiplicationResults.push(`Multiplication table of ${digit}`);
