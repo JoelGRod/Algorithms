@@ -1,4 +1,8 @@
 "use strict";
+/**
+ * Count the Words from a string.
+ * We use string.split, string.toLowerCase, string.replace, string.trim and array.map
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.countWords = void 0;
 const text_chain = "Hola, esto es un texto de prueba mediante el cual se " +
