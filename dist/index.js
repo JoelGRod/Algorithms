@@ -37,4 +37,4 @@ ex2.printResults(ex2.multiplyNumbers(5));
 // Ex 3: Find out if a string is palindrome or not
 console.log("Ex 3: Find out if a string is palindrome or not \n" +
     "----------------------------------------------------------");
-console.log(ex3_palindrome_1.isPalindrome('otto'));
+console.log("otto is a Palindrome?: ", ex3_palindrome_1.isPalindrome('otto'));
