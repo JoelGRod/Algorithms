@@ -19,7 +19,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const wordsCounter = __importStar(require("./exercises/ex1-words-counter"));
+const ex1_words_counter_1 = require("./exercises/ex1-words-counter");
+const ex2 = __importStar(require("./exercises/ex2-multiplication-table"));
 console.log("Job Interview exercises in TypeScript");
 // Ex 1: Count words from pre-defined text
 console.log("Ex 1: Count words from pre-defined text \n" +
@@ -27,5 +28,8 @@ console.log("Ex 1: Count words from pre-defined text \n" +
 const testText = " Hi! my name is name and this is " +
     "this a text with words! and repetitive WordS!, and anD, " +
     "is writteN like this WrittEn to check!!!! ";
-console.log(wordsCounter.countWords(testText));
+console.log(ex1_words_counter_1.countWords(testText));
 // Ex 2: Create the multiplication table of a specific number
+console.log("Ex 2: Create the multiplication table of a specific number \n" +
+    "----------------------------------------------------------");
+ex2.printResults(ex2.multiplyNumbers(5));
