@@ -8,6 +8,6 @@ exports.isPalindrome = void 0;
 function isPalindrome(word) {
     const wordNormalized = word.trim().toLowerCase();
     const reverseWord = wordNormalized.split('').reverse().join('');
-    return (wordNormalized === reverseWord);
+    return wordNormalized === reverseWord;
 }
 exports.isPalindrome = isPalindrome;

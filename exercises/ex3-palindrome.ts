@@ -7,5 +7,5 @@ export function isPalindrome( word: string ): boolean {
     const wordNormalized: string = word.trim().toLowerCase();
     const reverseWord: string = wordNormalized.split('').reverse().join('');
 
-    return (wordNormalized === reverseWord);
+    return wordNormalized === reverseWord;
 }
