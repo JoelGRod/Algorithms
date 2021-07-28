@@ -11,13 +11,13 @@ const text_chain = "Hola, esto es un texto de prueba mediante el cual se " +
     "mostrar este conteo por la consola... Espero que te diviertas!";
 // O(n)
 function countWords(text = text_chain) {
-    let counterList = {};
+    let counterMap = {};
     const wordsList = text.trim().split(' ');
     wordsList.map(word => {
-        basic_helpers_1.normalizeText(word) in counterList ?
-            ++counterList[basic_helpers_1.normalizeText(word)] :
-            counterList[basic_helpers_1.normalizeText(word)] = 1;
+        basic_helpers_1.normalizeText(word) in counterMap ?
+            ++counterMap[basic_helpers_1.normalizeText(word)] :
+            counterMap[basic_helpers_1.normalizeText(word)] = 1;
     });
-    return counterList;
+    return counterMap;
 }
 exports.countWords = countWords;

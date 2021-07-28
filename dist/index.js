@@ -23,7 +23,9 @@ const basicHelpers = __importStar(require("./shared/helpers/basic-helpers"));
 const ex1_words_counter_1 = require("./exercises/ex1-words-counter");
 const ex2_multiplication_table_1 = require("./exercises/ex2-multiplication-table");
 const ex3_palindrome_1 = require("./exercises/ex3-palindrome");
+const ex4_word_counter_1 = require("./exercises/ex4-word-counter");
 console.log("Job Interview exercises in TypeScript");
+// ------------------------------------------------------------------------------------- //
 // Ex 1: Count words from pre-defined text
 console.log("Ex 1: Count words from pre-defined text \n" +
     "---------------------------------------");
@@ -31,11 +33,23 @@ const testText = " Hi! my name is name and this is " +
     "this a text with words! and repetitive WordS!, and anD, " +
     "is writteN like this WrittEn to check!!!! ";
 console.log(ex1_words_counter_1.countWords(testText));
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
 // Ex 2: Create the multiplication table of a specific number
 console.log("Ex 2: Create the multiplication table of a specific number \n" +
     "----------------------------------------------------------");
 basicHelpers.printTextListResults(ex2_multiplication_table_1.multiplyNumbers(5));
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
 // Ex 3: Find out if a string is palindrome or not
 console.log("Ex 3: Find out if a string is palindrome or not \n" +
-    "----------------------------------------------------------");
+    "-----------------------------------------------");
 console.log("otto is a Palindrome?: ", ex3_palindrome_1.isPalindrome('otto'));
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 4: Given a string and a search word determinate if this word appears in the string.
+console.log("Ex 4: Find out if a string has a search word and it\'s number of appearances \n" +
+    "----------------------------------------------------------------------------");
+const textEx4 = "Hi this is an example text, text, text.";
+console.log("Word \"text\" appears in string this number of times: ", ex4_word_counter_1.countEspecificWord(textEx4, "text"));
+// ------------------------------------------------------------------------------------- //

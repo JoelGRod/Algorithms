@@ -12,14 +12,14 @@ const text_chain: string = "Hola, esto es un texto de prueba mediante el cual se
 // O(n)
 export function countWords( text: string = text_chain ) {
 
-    let counterList: { [ key: string ]: number } = {};
+    let counterMap: { [ key: string ]: number } = {};
     const wordsList = text.trim().split(' ');
 
     wordsList.map( word => {
-        normalizeText(word) in counterList ? 
-            ++counterList[normalizeText(word)] : 
-            counterList[normalizeText(word)] = 1;
+        normalizeText(word) in counterMap ? 
+            ++counterMap[normalizeText(word)] : 
+            counterMap[normalizeText(word)] = 1;
     } );
 
-    return counterList;
+    return counterMap;
 }
