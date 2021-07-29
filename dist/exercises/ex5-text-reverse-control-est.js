@@ -6,8 +6,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.reverseString = void 0;
 function reverseString(text) {
     let reversedText = "";
-    for (let i = 0; i <= text.length - 1; i++) {
-        reversedText = text[i] + reversedText;
+    // for(let i = 0; i <= text.length - 1; i++) {
+    //     reversedText = text[i] + reversedText; 
+    // }
+    for (let char of text) {
+        reversedText = char + reversedText;
     }
     return reversedText;
 }
