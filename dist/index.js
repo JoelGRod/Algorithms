@@ -24,6 +24,7 @@ const ex1_words_counter_1 = require("./exercises/ex1-words-counter");
 const ex2_multiplication_table_1 = require("./exercises/ex2-multiplication-table");
 const ex3_palindrome_1 = require("./exercises/ex3-palindrome");
 const ex4_word_counter_1 = require("./exercises/ex4-word-counter");
+const ex5_text_reverse_control_est_1 = require("./exercises/ex5-text-reverse-control-est");
 console.log("Job Interview exercises in TypeScript");
 // ------------------------------------------------------------------------------------- //
 // Ex 1: Count words from pre-defined text
@@ -52,4 +53,11 @@ console.log("Ex 4: Find out if a string has a search word and it\'s number of ap
     "----------------------------------------------------------------------------");
 const textEx4 = "Hi this is an example text, text, text.";
 console.log("Word \"text\" appears in string this number of times: ", ex4_word_counter_1.countEspecificWord(textEx4, "text"));
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 5: Given a string reverse it using control structures only.
+console.log("Ex 5: Given a string reverse it using control structures only" +
+    "-------------------------------------------------------------");
+const textEx5 = "My son it\'s so beautiful and Happy Baby!!!";
+console.log(`${textEx5} reversed is: `, ex5_text_reverse_control_est_1.reverseString(textEx5));
 // ------------------------------------------------------------------------------------- //

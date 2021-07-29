@@ -3,6 +3,7 @@ import { countWords } from './exercises/ex1-words-counter';
 import { multiplyNumbers } from './exercises/ex2-multiplication-table';
 import { isPalindrome } from './exercises/ex3-palindrome';
 import { countEspecificWord } from './exercises/ex4-word-counter';
+import { reverseString } from './exercises/ex5-text-reverse-control-est';
 
 console.log("Job Interview exercises in TypeScript");
 
@@ -37,5 +38,13 @@ console.log("Ex 4: Find out if a string has a search word and it\'s number of ap
 const textEx4: string = "Hi this is an example text, text, text.";
 console.log("Word \"text\" appears in string this number of times: ", 
             countEspecificWord(textEx4, "text"));
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 5: Given a string reverse it using control structures only.
+console.log("Ex 5: Given a string reverse it using control structures only" +
+            "-------------------------------------------------------------");
+const textEx5: string = "My son it\'s so beautiful and Happy Baby!!!";
+console.log(`${textEx5} reversed is: `, reverseString(textEx5));
 // ------------------------------------------------------------------------------------- //
 
