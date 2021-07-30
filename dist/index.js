@@ -26,6 +26,7 @@ const ex3_palindrome_1 = require("./exercises/ex3-palindrome");
 const ex4_word_counter_1 = require("./exercises/ex4-word-counter");
 const ex5_text_reverse_control_est_1 = require("./exercises/ex5-text-reverse-control-est");
 const ex6_calculate_percentage_1 = require("./exercises/ex6-calculate-percentage");
+const ex7_draw_square_1 = require("./exercises/ex7-draw-square");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -75,5 +76,12 @@ console.log("Ex 6: Given a number and a percentage and returns the calculation \
 const ex6Digit = 200;
 const ex6Percent = 20;
 console.log(`${ex6Percent}% of ${ex6Digit} is: `, ex6_calculate_percentage_1.calculatePercentage(ex6Digit, ex6Percent));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 7: Draw a hollow square in console with asterisks.
+console.log("Ex 7: Draw a hollow square in console with asterisks \n" +
+    "----------------------------------------------------");
+console.log(ex7_draw_square_1.drawSquare(10));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

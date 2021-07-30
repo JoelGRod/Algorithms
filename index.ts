@@ -5,6 +5,7 @@ import { isPalindrome } from './exercises/ex3-palindrome';
 import { countEspecificWord } from './exercises/ex4-word-counter';
 import { reverseString } from './exercises/ex5-text-reverse-control-est';
 import { calculatePercentage } from './exercises/ex6-calculate-percentage';
+import { drawSquare } from './exercises/ex7-draw-square';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -62,6 +63,14 @@ console.log("Ex 6: Given a number and a percentage and returns the calculation \
 const ex6Digit: number = 200;
 const ex6Percent: number = 20;
 console.log(`${ex6Percent}% of ${ex6Digit} is: `, calculatePercentage(ex6Digit, ex6Percent));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 7: Draw a hollow square in console with asterisks.
+console.log("Ex 7: Draw a hollow square in console with asterisks \n" +
+            "----------------------------------------------------");
+console.log(drawSquare(10));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 
