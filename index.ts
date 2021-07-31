@@ -8,6 +8,7 @@ import { calculatePercentage } from './exercises/ex6-calculate-percentage';
 import { drawSquare } from './exercises/ex7-draw-square';
 import { getOddNumbers } from './exercises/ex8-show-odd-numbers';
 import { invertNumber } from './exercises/ex9-invert-number';
+import { findCommonValues } from './exercises/ex10-array-common-values';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -94,6 +95,17 @@ console.log("Ex 9: Invert a number and return it: 59 -> 95 \n" +
 const ex9Digit: number = -59;
 console.log(`The number ${ex9Digit} inverted is: `,
                 invertNumber(ex9Digit));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 10: Return an array with the common values between two arrays (no duplicates).
+console.log("Ex 10: Return an array with the common values between two arrays (no duplicates) \n" +
+            "--------------------------------------------------------------------------------");
+const ex10FirstList: number[] = [1, 2, 3, 5, 4, 5];
+const ex10SecondList: number[] = [8, 7, 10, 5, 4, 5];
+console.log(`The common values between ${ex10FirstList} and ${ex10SecondList} are: `,
+                findCommonValues(ex10FirstList, ex10SecondList));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 

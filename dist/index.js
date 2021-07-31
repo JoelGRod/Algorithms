@@ -29,6 +29,7 @@ const ex6_calculate_percentage_1 = require("./exercises/ex6-calculate-percentage
 const ex7_draw_square_1 = require("./exercises/ex7-draw-square");
 const ex8_show_odd_numbers_1 = require("./exercises/ex8-show-odd-numbers");
 const ex9_invert_number_1 = require("./exercises/ex9-invert-number");
+const ex10_array_common_values_1 = require("./exercises/ex10-array-common-values");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -102,5 +103,14 @@ console.log("Ex 9: Invert a number and return it: 59 -> 95 \n" +
     "---------------------------------------------");
 const ex9Digit = -59;
 console.log(`The number ${ex9Digit} inverted is: `, ex9_invert_number_1.invertNumber(ex9Digit));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 10: Return an array with the common values between two arrays (no duplicates).
+console.log("Ex 10: Return an array with the common values between two arrays (no duplicates) \n" +
+    "--------------------------------------------------------------------------------");
+const ex10FirstList = [1, 2, 3, 5, 4, 5];
+const ex10SecondList = [8, 7, 10, 5, 4, 5];
+console.log(`The common values between ${ex10FirstList} and ${ex10SecondList} are: `, ex10_array_common_values_1.findCommonValues(ex10FirstList, ex10SecondList));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
