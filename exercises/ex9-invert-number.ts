@@ -3,5 +3,7 @@
  */
 
 export function invertNumber(digit: number): number {
-    return parseInt(digit.toString().split('').reverse().join(''));
+    return parseInt(
+        digit.toString().split('').reverse().join('')
+        ) * Math.sign(digit);
 }

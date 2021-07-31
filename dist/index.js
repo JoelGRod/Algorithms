@@ -100,7 +100,7 @@ console.log('----------------------------------------------------------------');
 // Ex 9: Invert a number and return it: 59 -> 95.
 console.log("Ex 9: Invert a number and return it: 59 -> 95 \n" +
     "---------------------------------------------");
-const ex9Digit = 59;
+const ex9Digit = -59;
 console.log(`The number ${ex9Digit} inverted is: `, ex9_invert_number_1.invertNumber(ex9Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
