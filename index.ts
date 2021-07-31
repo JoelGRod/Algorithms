@@ -6,6 +6,7 @@ import { countEspecificWord } from './exercises/ex4-word-counter';
 import { reverseString } from './exercises/ex5-text-reverse-control-est';
 import { calculatePercentage } from './exercises/ex6-calculate-percentage';
 import { drawSquare } from './exercises/ex7-draw-square';
+import { getOddNumbers } from './exercises/ex8-show-odd-numbers';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -71,6 +72,17 @@ console.log('----------------------------------------------------------------');
 console.log("Ex 7: Draw a hollow square in console with asterisks \n" +
             "----------------------------------------------------");
 console.log(drawSquare(4));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 8: Return total odd numbers between two digits.
+console.log("Ex 8: Return total odd numbers between two digits \n" +
+            "-------------------------------------------------");
+const ex8Min: number = 1;
+const ex8Max: number = 10;
+console.log(`Total odd numbers between ${ex8Min} and ${ex8Max}: `,
+                getOddNumbers(ex8Min, ex8Max));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 

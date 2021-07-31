@@ -27,6 +27,7 @@ const ex4_word_counter_1 = require("./exercises/ex4-word-counter");
 const ex5_text_reverse_control_est_1 = require("./exercises/ex5-text-reverse-control-est");
 const ex6_calculate_percentage_1 = require("./exercises/ex6-calculate-percentage");
 const ex7_draw_square_1 = require("./exercises/ex7-draw-square");
+const ex8_show_odd_numbers_1 = require("./exercises/ex8-show-odd-numbers");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -83,5 +84,14 @@ console.log('----------------------------------------------------------------');
 console.log("Ex 7: Draw a hollow square in console with asterisks \n" +
     "----------------------------------------------------");
 console.log(ex7_draw_square_1.drawSquare(4));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 8: Return total odd numbers between two digits.
+console.log("Ex 8: Return total odd numbers between two digits \n" +
+    "-------------------------------------------------");
+const ex8Min = 1;
+const ex8Max = 10;
+console.log(`Total odd numbers between ${ex8Min} and ${ex8Max}: `, ex8_show_odd_numbers_1.getOddNumbers(ex8Min, ex8Max));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
