@@ -7,6 +7,7 @@ import { reverseString } from './exercises/ex5-text-reverse-control-est';
 import { calculatePercentage } from './exercises/ex6-calculate-percentage';
 import { drawSquare } from './exercises/ex7-draw-square';
 import { getOddNumbers } from './exercises/ex8-show-odd-numbers';
+import { invertNumber } from './exercises/ex9-invert-number';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -83,6 +84,16 @@ const ex8Min: number = 1;
 const ex8Max: number = 10;
 console.log(`Total odd numbers between ${ex8Min} and ${ex8Max}: `,
                 getOddNumbers(ex8Min, ex8Max));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 9: Invert a number and return it: 59 -> 95.
+console.log("Ex 9: Invert a number and return it: 59 -> 95 \n" +
+            "---------------------------------------------");
+const ex9Digit: number = 59;
+console.log(`The number ${ex9Digit} inverted is: `,
+                invertNumber(ex9Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 

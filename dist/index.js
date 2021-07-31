@@ -28,6 +28,7 @@ const ex5_text_reverse_control_est_1 = require("./exercises/ex5-text-reverse-con
 const ex6_calculate_percentage_1 = require("./exercises/ex6-calculate-percentage");
 const ex7_draw_square_1 = require("./exercises/ex7-draw-square");
 const ex8_show_odd_numbers_1 = require("./exercises/ex8-show-odd-numbers");
+const ex9_invert_number_1 = require("./exercises/ex9-invert-number");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -93,5 +94,13 @@ console.log("Ex 8: Return total odd numbers between two digits \n" +
 const ex8Min = 1;
 const ex8Max = 10;
 console.log(`Total odd numbers between ${ex8Min} and ${ex8Max}: `, ex8_show_odd_numbers_1.getOddNumbers(ex8Min, ex8Max));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 9: Invert a number and return it: 59 -> 95.
+console.log("Ex 9: Invert a number and return it: 59 -> 95 \n" +
+    "---------------------------------------------");
+const ex9Digit = 59;
+console.log(`The number ${ex9Digit} inverted is: `, ex9_invert_number_1.invertNumber(ex9Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
