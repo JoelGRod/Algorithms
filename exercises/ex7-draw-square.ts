@@ -2,9 +2,11 @@
  * Draw a hollow square in console with asterisks
  */
 
-export function drawSquare(size: number): string {
+/** --------------------------------------------------------------- */
+// Recursion way (Tests fail?)
+export function drawSquareRecursion(size: number): string {
     let square: string = "";
-
+    
     square = drawSideRecursive(size, "*");
     
     for(let i = 0; i < size - 2; i++) {
@@ -14,7 +16,7 @@ export function drawSquare(size: number): string {
     }
     
     square += drawSideRecursive(size, "*");
-
+    
     return square;
 }
 
@@ -27,21 +29,39 @@ function drawInnerRecursive(size: number, symbol: string): string {
     if(size === 1) return symbol;
     return symbol + drawInnerRecursive(size - 1, symbol);
 }
+/** --------------------------------------------------------------- */
 
-// function drawInnerSide(size: number) {
-//     let innerSide: string = "*";
-//     for(let i = 0; i < size - 2; i++) {
-//         innerSide += " ";
-//     }
-//     innerSide += "*\n";
-//     return innerSide;
-// }
+/** --------------------------------------------------------------- */
+// Non recursive way (Tests pass)
+export function drawSquare(size: number): string {
+    let square: string = "";
+    
+    square += drawOuterSide(size) + "\n";
 
-// function drawOuterSide(size: number) {
-//     let side: string = "";
-//     for(let i = 0; i < size; i++) {
-//         side += "*";
-//     }
-//     return side;
-// }
+    for( let i = 0; i < size - 2; i++) {
+        square += drawInnerSide(size);
+    }
+    
+    square += drawOuterSide(size);
+    
+    return square;
+}
+
+function drawInnerSide(size: number) {
+    let innerSide: string = "*";
+    for(let i = 0; i < size - 2; i++) {
+        innerSide += " ";
+    }
+    innerSide += "*\n";
+    return innerSide;
+}
+
+function drawOuterSide(size: number) {
+    let side: string = "";
+    for(let i = 0; i < size; i++) {
+        side += "*";
+    }
+    return side;
+}
+/** --------------------------------------------------------------- */
 

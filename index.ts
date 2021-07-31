@@ -70,7 +70,7 @@ console.log('----------------------------------------------------------------');
 // Ex 7: Draw a hollow square in console with asterisks.
 console.log("Ex 7: Draw a hollow square in console with asterisks \n" +
             "----------------------------------------------------");
-console.log(drawSquare(10));
+console.log(drawSquare(4));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 
