@@ -11,6 +11,7 @@ import { invertNumber } from './exercises/ex9-invert-number';
 import { findCommonValues } from './exercises/ex10-array-common-values';
 import { createStair } from './exercises/ex11-show-stair';
 import { censorWord } from './exercises/ex12-replace-specific-word';
+import { regressiveEight } from './exercises/ex13-regressive-eight';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -130,3 +131,11 @@ console.log(censorWord(ex12Text, ex12Word));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 
+// ------------------------------------------------------------------------------------- //
+// Ex 13: Regressive counting by 8
+console.log("Ex 13: Regressive counting by 8 \n" +
+            "----------------------------------------------------------------------------------------");
+const ex13Digit: number = 100;
+console.log(regressiveEight(ex13Digit));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //

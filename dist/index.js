@@ -32,6 +32,7 @@ const ex9_invert_number_1 = require("./exercises/ex9-invert-number");
 const ex10_array_common_values_1 = require("./exercises/ex10-array-common-values");
 const ex11_show_stair_1 = require("./exercises/ex11-show-stair");
 const ex12_replace_specific_word_1 = require("./exercises/ex12-replace-specific-word");
+const ex13_regressive_eight_1 = require("./exercises/ex13-regressive-eight");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -131,5 +132,13 @@ console.log("Ex 12: Given a text and a search word, replace each occurrence of t
 const ex12Text = "We need not to say BaD words because baD words are bad.";
 const ex12Word = "bad";
 console.log(ex12_replace_specific_word_1.censorWord(ex12Text, ex12Word));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 13: Regressive counting by 8
+console.log("Ex 13: Regressive counting by 8 \n" +
+    "----------------------------------------------------------------------------------------");
+const ex13Digit = 100;
+console.log(ex13_regressive_eight_1.regressiveEight(ex13Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
