@@ -9,6 +9,7 @@ import { drawSquare } from './exercises/ex7-draw-square';
 import { getOddNumbers } from './exercises/ex8-show-odd-numbers';
 import { invertNumber } from './exercises/ex9-invert-number';
 import { findCommonValues } from './exercises/ex10-array-common-values';
+import { createStair } from './exercises/ex11-show-stair';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -106,6 +107,15 @@ const ex10FirstList: number[] = [1, 2, 3, 5, 4, 5];
 const ex10SecondList: number[] = [8, 7, 10, 5, 4, 5];
 console.log(`The common values between ${ex10FirstList} and ${ex10SecondList} are: `,
                 findCommonValues(ex10FirstList, ex10SecondList));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 11: Print a stair with the number of steps defined by argument.
+console.log("Ex 11: Print a stair with the number of steps defined by argument \n" +
+            "--------------------------------------------------------------------------------");
+const ex11Steps: number = 6;
+console.log(createStair(ex11Steps));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 

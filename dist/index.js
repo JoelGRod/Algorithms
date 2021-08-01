@@ -30,6 +30,7 @@ const ex7_draw_square_1 = require("./exercises/ex7-draw-square");
 const ex8_show_odd_numbers_1 = require("./exercises/ex8-show-odd-numbers");
 const ex9_invert_number_1 = require("./exercises/ex9-invert-number");
 const ex10_array_common_values_1 = require("./exercises/ex10-array-common-values");
+const ex11_show_stair_1 = require("./exercises/ex11-show-stair");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -112,5 +113,13 @@ console.log("Ex 10: Return an array with the common values between two arrays (n
 const ex10FirstList = [1, 2, 3, 5, 4, 5];
 const ex10SecondList = [8, 7, 10, 5, 4, 5];
 console.log(`The common values between ${ex10FirstList} and ${ex10SecondList} are: `, ex10_array_common_values_1.findCommonValues(ex10FirstList, ex10SecondList));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 11: Print a stair with the number of steps defined by argument.
+console.log("Ex 11: Print a stair with the number of steps defined by argument \n" +
+    "--------------------------------------------------------------------------------");
+const ex11Steps = 6;
+console.log(ex11_show_stair_1.createStair(ex11Steps));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
