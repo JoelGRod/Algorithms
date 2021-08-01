@@ -10,6 +10,7 @@ import { getOddNumbers } from './exercises/ex8-show-odd-numbers';
 import { invertNumber } from './exercises/ex9-invert-number';
 import { findCommonValues } from './exercises/ex10-array-common-values';
 import { createStair } from './exercises/ex11-show-stair';
+import { censorWord } from './exercises/ex12-replace-specific-word';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -112,10 +113,20 @@ console.log('----------------------------------------------------------------');
 
 // ------------------------------------------------------------------------------------- //
 // Ex 11: Print a stair with the number of steps defined by argument.
-console.log("Ex 11: Print a stair with the number of steps defined by argument \n" +
-            "--------------------------------------------------------------------------------");
+console.log("Ex 11: Print a stair with the number of steps defined by argument. \n" +
+            "------------------------------------------------------------------");
 const ex11Steps: number = 6;
 console.log(createStair(ex11Steps));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 12: Given a text and a search word, replace each occurrence of the word with CENSORED.
+console.log("Ex 12: Given a text and a search word, replace each occurrence of the word with CENSORED. \n" +
+            "----------------------------------------------------------------------------------------");
+const ex12Text: string = "We need not to say BaD words because baD words are bad.";
+const ex12Word: string = "bad";
+console.log(censorWord(ex12Text, ex12Word));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 

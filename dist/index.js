@@ -31,6 +31,7 @@ const ex8_show_odd_numbers_1 = require("./exercises/ex8-show-odd-numbers");
 const ex9_invert_number_1 = require("./exercises/ex9-invert-number");
 const ex10_array_common_values_1 = require("./exercises/ex10-array-common-values");
 const ex11_show_stair_1 = require("./exercises/ex11-show-stair");
+const ex12_replace_specific_word_1 = require("./exercises/ex12-replace-specific-word");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -117,9 +118,18 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // ------------------------------------------------------------------------------------- //
 // Ex 11: Print a stair with the number of steps defined by argument.
-console.log("Ex 11: Print a stair with the number of steps defined by argument \n" +
-    "--------------------------------------------------------------------------------");
+console.log("Ex 11: Print a stair with the number of steps defined by argument. \n" +
+    "------------------------------------------------------------------");
 const ex11Steps = 6;
 console.log(ex11_show_stair_1.createStair(ex11Steps));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 12: Given a text and a search word, replace each occurrence of the word with CENSORED.
+console.log("Ex 12: Given a text and a search word, replace each occurrence of the word with CENSORED. \n" +
+    "----------------------------------------------------------------------------------------");
+const ex12Text = "We need not to say BaD words because baD words are bad.";
+const ex12Word = "bad";
+console.log(ex12_replace_specific_word_1.censorWord(ex12Text, ex12Word));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
