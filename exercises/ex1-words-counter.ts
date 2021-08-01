@@ -10,7 +10,7 @@ const text_chain: string = "Hola, esto es un texto de prueba mediante el cual se
     "mostrar este conteo por la consola... Espero que te diviertas!";
 
 // O(n)
-export function countWords( text: string = text_chain ) {
+export function countWords( text: string = text_chain ): {[ key: string ]: number} {
 
     let counterMap: { [ key: string ]: number } = {};
     const wordsList = text.trim().split(' ');
