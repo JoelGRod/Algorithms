@@ -20,6 +20,4 @@ export function createStair(steps: number): string {
     //     }
     //     stair += actualLevel + "\n";
     // }
-
-
 }
