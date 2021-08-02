@@ -33,6 +33,7 @@ const ex10_array_common_values_1 = require("./exercises/ex10-array-common-values
 const ex11_show_stair_1 = require("./exercises/ex11-show-stair");
 const ex12_replace_specific_word_1 = require("./exercises/ex12-replace-specific-word");
 const ex13_regressive_eight_1 = require("./exercises/ex13-regressive-eight");
+const ex14_divide_arrays_1 = require("./exercises/ex14-divide-arrays");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -140,5 +141,13 @@ console.log("Ex 13: Regressive counting by 8 \n" +
     "----------------------------------------------------------------------------------------");
 const ex13Digit = 100;
 console.log(ex13_regressive_eight_1.regressiveEight(ex13Digit));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 14: Divides an array in subarrays
+console.log("Ex 14: Divides an array in subarrays \n" +
+    "-------------------------------");
+const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(ex14_divide_arrays_1.divideArrays(list, 2));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
