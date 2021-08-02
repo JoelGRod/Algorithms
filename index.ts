@@ -14,6 +14,7 @@ import { censorWord } from './exercises/ex12-replace-specific-word';
 import { regressiveEight } from './exercises/ex13-regressive-eight';
 import { divideArrays } from './exercises/ex14-divide-arrays';
 import { repeatString } from './exercises/ex15-repeat-string';
+import { findMostUsedChar } from './exercises/ex16-most-used-chars';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -145,7 +146,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 14: Divides an array in subarrays
 console.log("Ex 14: Divides an array in subarrays \n" +
-            "-------------------------------");
+            "------------------------------------");
 const ex14List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 console.log(divideArrays(ex14List, 3));
 console.log('----------------------------------------------------------------');
@@ -154,9 +155,18 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 15: Repeat a string certain number of times
 console.log("Ex 15: Repeat a string certain number of times \n" +
-            "-------------------------------");
+            "----------------------------------------------");
 const ex15Text = "hello";
 const ex15Repetition = 6;
 console.log(repeatString(ex15Text, ex15Repetition ));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 16: Find the most used char in a text
+console.log("Ex 16: Find the most used char in a text \n" +
+            "----------------------------------------");
+const ex16Text = "Most used word is... i dont know";
+console.log(findMostUsedChar(ex16Text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

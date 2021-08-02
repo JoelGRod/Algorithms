@@ -35,6 +35,7 @@ const ex12_replace_specific_word_1 = require("./exercises/ex12-replace-specific-
 const ex13_regressive_eight_1 = require("./exercises/ex13-regressive-eight");
 const ex14_divide_arrays_1 = require("./exercises/ex14-divide-arrays");
 const ex15_repeat_string_1 = require("./exercises/ex15-repeat-string");
+const ex16_most_used_chars_1 = require("./exercises/ex16-most-used-chars");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -147,7 +148,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 14: Divides an array in subarrays
 console.log("Ex 14: Divides an array in subarrays \n" +
-    "-------------------------------");
+    "------------------------------------");
 const ex14List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 console.log(ex14_divide_arrays_1.divideArrays(ex14List, 3));
 console.log('----------------------------------------------------------------');
@@ -155,9 +156,17 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 15: Repeat a string certain number of times
 console.log("Ex 15: Repeat a string certain number of times \n" +
-    "-------------------------------");
+    "----------------------------------------------");
 const ex15Text = "hello";
 const ex15Repetition = 6;
 console.log(ex15_repeat_string_1.repeatString(ex15Text, ex15Repetition));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 16: Find the most used char in a text
+console.log("Ex 16: Find the most used char in a text \n" +
+    "----------------------------------------");
+const ex16Text = "Most used word is... i dont know";
+console.log(ex16_most_used_chars_1.findMostUsedChar(ex16Text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
