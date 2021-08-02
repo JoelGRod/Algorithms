@@ -13,6 +13,7 @@ import { createStair } from './exercises/ex11-show-stair';
 import { censorWord } from './exercises/ex12-replace-specific-word';
 import { regressiveEight } from './exercises/ex13-regressive-eight';
 import { divideArrays } from './exercises/ex14-divide-arrays';
+import { repeatString } from './exercises/ex15-repeat-string';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -145,7 +146,17 @@ console.log('----------------------------------------------------------------');
 // Ex 14: Divides an array in subarrays
 console.log("Ex 14: Divides an array in subarrays \n" +
             "-------------------------------");
-const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(divideArrays(list, 2));
+const ex14List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+console.log(divideArrays(ex14List, 3));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 15: Repeat a string certain number of times
+console.log("Ex 15: Repeat a string certain number of times \n" +
+            "-------------------------------");
+const ex15Text = "hello";
+const ex15Repetition = 6;
+console.log(repeatString(ex15Text, ex15Repetition ));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
