@@ -1,17 +1,9 @@
+import { getCharMap } from "../shared/helpers/basic-helpers";
 
 
 export function findMostUsedChar(text: string): string {
     
-    let charMap: { [key: string]: number } = {};
-
-    text.trim()
-        .toLowerCase()
-        .replace(/[\s.!?¿¡]/g, "")
-        .split('')
-        .forEach( char => {
-        if(char in charMap) ++charMap[char];
-        else charMap[char] = 1;
-    });
+    let charMap = getCharMap(text);
     
     let maxChar: string = "";
 
@@ -19,6 +11,6 @@ export function findMostUsedChar(text: string): string {
         if(maxChar === "" || charMap[maxChar] < charMap[char]) maxChar = char;
     }
 
-    return `The most used char is: ${maxChar}`;
+    return maxChar;
 
 }

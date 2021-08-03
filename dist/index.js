@@ -167,6 +167,6 @@ console.log('----------------------------------------------------------------');
 console.log("Ex 16: Find the most used char in a text \n" +
     "----------------------------------------");
 const ex16Text = "Most used word is... i dont know";
-console.log(ex16_most_used_chars_1.findMostUsedChar(ex16Text));
+console.log(`The most used char is: ${ex16_most_used_chars_1.findMostUsedChar(ex16Text)}`);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
