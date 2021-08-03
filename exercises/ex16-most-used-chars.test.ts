@@ -5,7 +5,7 @@ describe("Exercise 16", () => {
     test("findMostUsedChar is defined", () => {
         expect(findMostUsedChar).toBeDefined();
     });
-    test("findMostUsedChar is defined", () => {
+    test("findMostUsedChar return most used char", () => {
         expect(findMostUsedChar(text)).toBe("e");
     });
 });
