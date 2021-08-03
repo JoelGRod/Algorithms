@@ -15,6 +15,7 @@ import { regressiveEight } from './exercises/ex13-regressive-eight';
 import { divideArrays } from './exercises/ex14-divide-arrays';
 import { repeatString } from './exercises/ex15-repeat-string';
 import { findMostUsedChar } from './exercises/ex16-most-used-chars';
+import { countVowels } from './exercises/ex17-count-vowels';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -168,5 +169,14 @@ console.log("Ex 16: Find the most used char in a text \n" +
             "----------------------------------------");
 const ex16Text = "Most used word is... i dont know";
 console.log(`The most used char is: ${findMostUsedChar(ex16Text)}`);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 17: Count the number of vowels in a text
+console.log("Ex 17: Count the number of vowels in a text \n" +
+            "----------------------------------------");
+const ex17Text = "Most used word is... i dont know";
+console.log(`Number of vowels: ${countVowels(ex17Text)}`);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

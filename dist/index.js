@@ -36,6 +36,7 @@ const ex13_regressive_eight_1 = require("./exercises/ex13-regressive-eight");
 const ex14_divide_arrays_1 = require("./exercises/ex14-divide-arrays");
 const ex15_repeat_string_1 = require("./exercises/ex15-repeat-string");
 const ex16_most_used_chars_1 = require("./exercises/ex16-most-used-chars");
+const ex17_count_vowels_1 = require("./exercises/ex17-count-vowels");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -168,5 +169,13 @@ console.log("Ex 16: Find the most used char in a text \n" +
     "----------------------------------------");
 const ex16Text = "Most used word is... i dont know";
 console.log(`The most used char is: ${ex16_most_used_chars_1.findMostUsedChar(ex16Text)}`);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 17: Count the number of vowels in a text
+console.log("Ex 17: Count the number of vowels in a text \n" +
+    "----------------------------------------");
+const ex17Text = "Most used word is... i dont know";
+console.log(`Number of vowels: ${ex17_count_vowels_1.countVowels(ex17Text)}`);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
