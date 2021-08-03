@@ -1,4 +1,7 @@
 "use strict";
+/**
+ * Find the most used char from a string
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.findMostUsedChar = void 0;
 const basic_helpers_1 = require("../shared/helpers/basic-helpers");

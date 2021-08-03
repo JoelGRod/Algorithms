@@ -1,5 +1,8 @@
-import { getCharMap } from "../shared/helpers/basic-helpers";
+/**
+ * Find the most used char from a string
+ */
 
+import { getCharMap } from "../shared/helpers/basic-helpers";
 
 export function findMostUsedChar(text: string): string {
     
