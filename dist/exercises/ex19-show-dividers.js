@@ -5,9 +5,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.showDividers = exports.isDivisible = void 0;
 function isDivisible(digit, divisor) {
-    if (digit % divisor === 0)
-        return true;
-    return false;
+    return (digit % divisor === 0) ? true : false;
 }
 exports.isDivisible = isDivisible;
 function showDividers(digit) {

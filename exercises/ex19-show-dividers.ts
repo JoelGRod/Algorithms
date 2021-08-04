@@ -3,8 +3,7 @@
  */
 
 export function isDivisible(digit: number, divisor: number): boolean {
-    if(digit % divisor === 0) return true;
-    return false;
+    return (digit % divisor === 0) ? true : false;
 }
 
 export function showDividers(digit: number): void {
