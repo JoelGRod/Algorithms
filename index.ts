@@ -19,6 +19,7 @@ import { countVowels } from './exercises/ex17-count-vowels';
 import { printFizzBuzz } from './exercises/ex18-fizz-buzz';
 import { showDividers } from './exercises/ex19-show-dividers';
 import { printFilmsByView } from './exercises/ex20-show-movies';
+import { isAnagram } from './exercises/ex21-check-anagram';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -234,5 +235,15 @@ const ex20MoviesList = [
     }
 ];
 printFilmsByView(ex20MoviesList);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 21: Given two string, check if the second one is an anagram of the first one
+console.log("Ex 21: Given two string, check if the second one is an anagram of the first one \n" +
+    "-------------------------------------------------------------------------------");
+const ex21TextOne = "Sergio";
+const ex21TextTwo = "Riesgo";
+console.log(`${ex21TextOne} is an anagram of ${ex21TextTwo}? `, isAnagram(ex21TextOne, ex21TextTwo));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

@@ -40,6 +40,7 @@ const ex17_count_vowels_1 = require("./exercises/ex17-count-vowels");
 const ex18_fizz_buzz_1 = require("./exercises/ex18-fizz-buzz");
 const ex19_show_dividers_1 = require("./exercises/ex19-show-dividers");
 const ex20_show_movies_1 = require("./exercises/ex20-show-movies");
+const ex21_check_anagram_1 = require("./exercises/ex21-check-anagram");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -230,5 +231,14 @@ const ex20MoviesList = [
     }
 ];
 ex20_show_movies_1.printFilmsByView(ex20MoviesList);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 21: Given two string, check if the second one is an anagram of the first one
+console.log("Ex 21: Given two string, check if the second one is an anagram of the first one \n" +
+    "-------------------------------------------------------------------------------");
+const ex21TextOne = "Sergio";
+const ex21TextTwo = "Riesgo";
+console.log(`${ex21TextOne} is an anagram of ${ex21TextTwo}? `, ex21_check_anagram_1.isAnagram(ex21TextOne, ex21TextTwo));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
