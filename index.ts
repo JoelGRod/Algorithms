@@ -18,6 +18,7 @@ import { findMostUsedChar } from './exercises/ex16-most-used-chars';
 import { countVowels } from './exercises/ex17-count-vowels';
 import { printFizzBuzz } from './exercises/ex18-fizz-buzz';
 import { showDividers } from './exercises/ex19-show-dividers';
+import { printFilmsByView } from './exercises/ex20-show-movies';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -149,7 +150,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 14: Divides an array in subarrays
 console.log("Ex 14: Divides an array in subarrays \n" +
-            "------------------------------------");
+    "------------------------------------");
 const ex14List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 console.log(divideArrays(ex14List, 3));
 console.log('----------------------------------------------------------------');
@@ -158,17 +159,17 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 15: Repeat a string certain number of times
 console.log("Ex 15: Repeat a string certain number of times \n" +
-            "----------------------------------------------");
+    "----------------------------------------------");
 const ex15Text = "hello";
 const ex15Repetition = 6;
-console.log(repeatString(ex15Text, ex15Repetition ));
+console.log(repeatString(ex15Text, ex15Repetition));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 
 // ------------------------------------------------------------------------------------- //
 // Ex 16: Find the most used char in a text
 console.log("Ex 16: Find the most used char in a text \n" +
-            "----------------------------------------");
+    "----------------------------------------");
 const ex16Text = "Most used word is... i dont know";
 console.log(`The most used char is: ${findMostUsedChar(ex16Text)}`);
 console.log('----------------------------------------------------------------');
@@ -177,7 +178,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 17: Count the number of vowels in a text
 console.log("Ex 17: Count the number of vowels in a text \n" +
-            "-------------------------------------------");
+    "-------------------------------------------");
 const ex17Text = "Most used word is... i dont know";
 console.log(`Number of vowels: ${countVowels(ex17Text)}`);
 console.log('----------------------------------------------------------------');
@@ -186,7 +187,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 18: Fizz Buzz exercise
 console.log("Ex 18: Fizz Buzz exercise \n" +
-            "-------------------------");
+    "-------------------------");
 const ex18Number = 100;
 printFizzBuzz(ex18Number);
 console.log('----------------------------------------------------------------');
@@ -195,8 +196,43 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 19: Show dividers of a number
 console.log("Ex 19: Show dividers of a number \n" +
-            "--------------------------------");
+    "--------------------------------");
 const ex19Number = 10;
 showDividers(ex19Number);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 20: Given a film list, show which films have been seen and which ones have not
+console.log("Ex 20: Given a film list, show which films have been seen and which ones have not \n" +
+    "-------------------------------------------------------------------------------");
+const ex20MoviesList = [
+    {
+        title: "Spiderman",
+        director: "Some Director",
+        isViewed: true,
+    },
+    {
+        title: "Star Wars - The Last One",
+        director: "Some Director",
+        isViewed: false,
+    },
+    {
+        title: "The Light House",
+        director: "Some Director",
+        isViewed: true,
+    },
+    {
+        title: "The Green Book",
+        director: "Some Director",
+        isViewed: true,
+    },
+    {
+        title: "Captain Marvel",
+        director: "Some Director",
+        isViewed: false,
+    }
+];
+printFilmsByView(ex20MoviesList);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

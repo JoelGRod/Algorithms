@@ -39,6 +39,7 @@ const ex16_most_used_chars_1 = require("./exercises/ex16-most-used-chars");
 const ex17_count_vowels_1 = require("./exercises/ex17-count-vowels");
 const ex18_fizz_buzz_1 = require("./exercises/ex18-fizz-buzz");
 const ex19_show_dividers_1 = require("./exercises/ex19-show-dividers");
+const ex20_show_movies_1 = require("./exercises/ex20-show-movies");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -195,5 +196,39 @@ console.log("Ex 19: Show dividers of a number \n" +
     "--------------------------------");
 const ex19Number = 10;
 ex19_show_dividers_1.showDividers(ex19Number);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 20: Given a film list, show which films have been seen and which ones have not
+console.log("Ex 20: Given a film list, show which films have been seen and which ones have not \n" +
+    "-------------------------------------------------------------------------------");
+const ex20MoviesList = [
+    {
+        title: "Spiderman",
+        director: "Some Director",
+        isViewed: true,
+    },
+    {
+        title: "Star Wars - The Last One",
+        director: "Some Director",
+        isViewed: false,
+    },
+    {
+        title: "The Light House",
+        director: "Some Director",
+        isViewed: true,
+    },
+    {
+        title: "The Green Book",
+        director: "Some Director",
+        isViewed: true,
+    },
+    {
+        title: "Captain Marvel",
+        director: "Some Director",
+        isViewed: false,
+    }
+];
+ex20_show_movies_1.printFilmsByView(ex20MoviesList);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
