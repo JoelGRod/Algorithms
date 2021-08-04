@@ -41,6 +41,7 @@ const ex18_fizz_buzz_1 = require("./exercises/ex18-fizz-buzz");
 const ex19_show_dividers_1 = require("./exercises/ex19-show-dividers");
 const ex20_show_movies_1 = require("./exercises/ex20-show-movies");
 const ex21_check_anagram_1 = require("./exercises/ex21-check-anagram");
+const ex22_cut_text_1 = require("./exercises/ex22-cut-text");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -240,5 +241,14 @@ console.log("Ex 21: Given two string, check if the second one is an anagram of t
 const ex21TextOne = "Sergio";
 const ex21TextTwo = "Riesgo";
 console.log(`${ex21TextOne} is an anagram of ${ex21TextTwo}? `, ex21_check_anagram_1.isAnagram(ex21TextOne, ex21TextTwo));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 22: Given a string and a number, returns the string with only the specified number of characters
+console.log("Ex 22: Given a string and a number, returns the string with only the specified number of characters \n" +
+    "---------------------------------------------------------------------------------------------------");
+const ex22text = "This is a test string for the exercise";
+const ex22number = 6;
+console.log(`The first ${ex22number} characters of "${ex22text}" are: "`, ex22_cut_text_1.cutText(ex22text, ex22number));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
