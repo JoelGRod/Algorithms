@@ -42,6 +42,7 @@ const ex19_show_dividers_1 = require("./exercises/ex19-show-dividers");
 const ex20_show_movies_1 = require("./exercises/ex20-show-movies");
 const ex21_check_anagram_1 = require("./exercises/ex21-check-anagram");
 const ex22_cut_text_1 = require("./exercises/ex22-cut-text");
+const ex23_bigger_number_1 = require("./exercises/ex23-bigger-number");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -249,6 +250,15 @@ console.log("Ex 22: Given a string and a number, returns the string with only th
     "---------------------------------------------------------------------------------------------------");
 const ex22text = "This is a test string for the exercise";
 const ex22number = 6;
-console.log(`The first ${ex22number} characters of "${ex22text}" are: "`, ex22_cut_text_1.cutText(ex22text, ex22number));
+console.log(`The first ${ex22number} characters of "${ex22text}" are: `, ex22_cut_text_1.cutText(ex22text, ex22number));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 23: Given a two numbers, define which is bigger and which is smaller
+console.log("Ex 23: Given a two numbers, define which is bigger and which is smaller \n" +
+    "-----------------------------------------------------------------------");
+const ex23digitOne = 18;
+const ex23digitTwo = 10;
+console.log(ex23_bigger_number_1.printBiggerSmaller(ex23digitOne, ex23digitTwo));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
