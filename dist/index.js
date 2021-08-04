@@ -38,6 +38,7 @@ const ex15_repeat_string_1 = require("./exercises/ex15-repeat-string");
 const ex16_most_used_chars_1 = require("./exercises/ex16-most-used-chars");
 const ex17_count_vowels_1 = require("./exercises/ex17-count-vowels");
 const ex18_fizz_buzz_1 = require("./exercises/ex18-fizz-buzz");
+const ex19_show_dividers_1 = require("./exercises/ex19-show-dividers");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -186,5 +187,13 @@ console.log("Ex 18: Fizz Buzz exercise \n" +
     "-------------------------");
 const ex18Number = 100;
 ex18_fizz_buzz_1.printFizzBuzz(ex18Number);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 19: Show dividers of a number
+console.log("Ex 19: Show dividers of a number \n" +
+    "--------------------------------");
+const ex19Number = 10;
+ex19_show_dividers_1.showDividers(ex19Number);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

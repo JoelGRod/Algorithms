@@ -17,6 +17,7 @@ import { repeatString } from './exercises/ex15-repeat-string';
 import { findMostUsedChar } from './exercises/ex16-most-used-chars';
 import { countVowels } from './exercises/ex17-count-vowels';
 import { printFizzBuzz } from './exercises/ex18-fizz-buzz';
+import { showDividers } from './exercises/ex19-show-dividers';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -188,5 +189,14 @@ console.log("Ex 18: Fizz Buzz exercise \n" +
             "-------------------------");
 const ex18Number = 100;
 printFizzBuzz(ex18Number);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 19: Show dividers of a number
+console.log("Ex 19: Show dividers of a number \n" +
+            "--------------------------------");
+const ex19Number = 10;
+showDividers(ex19Number);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
