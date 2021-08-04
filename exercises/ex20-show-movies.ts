@@ -14,9 +14,7 @@ export function isViewedMessage(film: Movie): string {
 }
 
 export function printFilmsByView(moviesList: Movie[]): void {
-
     for(let movie of moviesList) {
         console.log(isViewedMessage(movie));
     }
-
 }
