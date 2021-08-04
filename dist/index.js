@@ -37,6 +37,7 @@ const ex14_divide_arrays_1 = require("./exercises/ex14-divide-arrays");
 const ex15_repeat_string_1 = require("./exercises/ex15-repeat-string");
 const ex16_most_used_chars_1 = require("./exercises/ex16-most-used-chars");
 const ex17_count_vowels_1 = require("./exercises/ex17-count-vowels");
+const ex18_fizz_buzz_1 = require("./exercises/ex18-fizz-buzz");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -174,8 +175,16 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 17: Count the number of vowels in a text
 console.log("Ex 17: Count the number of vowels in a text \n" +
-    "----------------------------------------");
+    "-------------------------------------------");
 const ex17Text = "Most used word is... i dont know";
 console.log(`Number of vowels: ${ex17_count_vowels_1.countVowels(ex17Text)}`);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 18: Fizz Buzz exercise
+console.log("Ex 18: Fizz Buzz exercise \n" +
+    "-------------------------");
+const ex18Number = 100;
+ex18_fizz_buzz_1.printFizzBuzz(ex18Number);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

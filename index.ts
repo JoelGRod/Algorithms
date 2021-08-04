@@ -16,6 +16,7 @@ import { divideArrays } from './exercises/ex14-divide-arrays';
 import { repeatString } from './exercises/ex15-repeat-string';
 import { findMostUsedChar } from './exercises/ex16-most-used-chars';
 import { countVowels } from './exercises/ex17-count-vowels';
+import { printFizzBuzz } from './exercises/ex18-fizz-buzz';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -175,8 +176,17 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 17: Count the number of vowels in a text
 console.log("Ex 17: Count the number of vowels in a text \n" +
-            "----------------------------------------");
+            "-------------------------------------------");
 const ex17Text = "Most used word is... i dont know";
 console.log(`Number of vowels: ${countVowels(ex17Text)}`);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 18: Fizz Buzz exercise
+console.log("Ex 18: Fizz Buzz exercise \n" +
+            "-------------------------");
+const ex18Number = 100;
+printFizzBuzz(ex18Number);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
