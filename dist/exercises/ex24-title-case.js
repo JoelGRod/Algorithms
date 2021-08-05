@@ -9,7 +9,7 @@ function toTitleCaseRegExp(text) {
 }
 exports.toTitleCaseRegExp = toTitleCaseRegExp;
 function toTitleCase(text) {
-    let charList = text.split('');
+    let charList = text.toLowerCase().split('');
     let lastChar = "";
     for (let i = 0; i < charList.length; i++) {
         if (i === 0 || lastChar === " ")

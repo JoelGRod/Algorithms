@@ -267,7 +267,7 @@ console.log('----------------------------------------------------------------');
 // Ex 24: Given a string, returns it converted to Title Case
 console.log("Ex 24: Given a string, returns it converted to Title Case \n" +
     "---------------------------------------------------------");
-const ex24Text = "This Is a test string";
+const ex24Text = "this is a test string";
 console.log(ex24_title_case_1.toTitleCaseRegExp(ex24Text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
