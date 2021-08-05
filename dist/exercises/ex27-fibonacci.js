@@ -1,4 +1,7 @@
 "use strict";
+/**
+ * Returns the fibonacci sequence sum
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fibonacci = void 0;
 function fibonacci(digit) {

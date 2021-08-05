@@ -6,7 +6,7 @@ describe("Exercise 27", () => {
     test("fibonacci is defined", () => {
         expect(fibonacci).toBeDefined();
     });
-    test("fibonacci is returns fibonacci secuence sum", () => {
+    test("fibonacci is returns fibonacci sequence sum", () => {
         expect(fibonacci(digit)).toBe(143);
     });
 });

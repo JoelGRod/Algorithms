@@ -1,4 +1,6 @@
-
+/**
+ * Returns the fibonacci sequence sum
+ */
 
 export function fibonacci(digit: number): number {
 
