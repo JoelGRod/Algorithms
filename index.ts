@@ -22,9 +22,9 @@ import { printFilmsByView } from './exercises/ex20-show-movies';
 import { isAnagram } from './exercises/ex21-check-anagram';
 import { cutText } from './exercises/ex22-cut-text';
 import { printBiggerSmaller } from './exercises/ex23-bigger-number';
-import { toTitleCase, toTitleCaseRegExp } from './exercises/ex24-title-case';
+import { toTitleCaseRegExp } from './exercises/ex24-title-case';
 import { isPermutation } from './exercises/ex25-permutation';
-import { toUpperOrLowerCase } from './exercises/ex26-upper-lower-case';
+import { toUpperOrLowerCase, toUpperOrLowerCaseAlt } from './exercises/ex26-upper-lower-case';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -298,5 +298,6 @@ console.log("Ex 26: Given a text, return text to lowercase if the number of lowe
             "-------------------------------------------------------------------------------------------------------------------");
 const ex26text: string = "THIS IS A TEST String";
 console.log(`Text: ${ex26text} -> `, toUpperOrLowerCase(ex26text));
+console.log(`Text: ${ex26text} -> `, toUpperOrLowerCaseAlt(ex26text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

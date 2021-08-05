@@ -288,5 +288,6 @@ console.log("Ex 26: Given a text, return text to lowercase if the number of lowe
     "-------------------------------------------------------------------------------------------------------------------");
 const ex26text = "THIS IS A TEST String";
 console.log(`Text: ${ex26text} -> `, ex26_upper_lower_case_1.toUpperOrLowerCase(ex26text));
+console.log(`Text: ${ex26text} -> `, ex26_upper_lower_case_1.toUpperOrLowerCaseAlt(ex26text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

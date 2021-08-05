@@ -13,3 +13,17 @@ export function toUpperOrLowerCase(text: string): string {
 
     return uppers > lowers ? text.toUpperCase() : text.toLowerCase();
 }
+
+export function toUpperOrLowerCaseAlt(text: string): string {
+    
+    let upper: number = 0, lower: number = 0;
+    // const regexUpper = new RegExp('[A-Z]', 'g');
+    // const regexlower = new RegExp('[a-z]', 'g');
+
+    for(let char of text) {
+        if(/[A-Z]/.test(char)) upper++;
+        if(/[a-z]/.test(char)) lower++;
+    }
+
+    return upper > lower ? text.toUpperCase() : text.toLowerCase();
+}
