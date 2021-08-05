@@ -44,6 +44,7 @@ const ex21_check_anagram_1 = require("./exercises/ex21-check-anagram");
 const ex22_cut_text_1 = require("./exercises/ex22-cut-text");
 const ex23_bigger_number_1 = require("./exercises/ex23-bigger-number");
 const ex24_title_case_1 = require("./exercises/ex24-title-case");
+const ex25_permutation_1 = require("./exercises/ex25-permutation");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -269,5 +270,14 @@ console.log("Ex 24: Given a string, returns it converted to Title Case \n" +
     "---------------------------------------------------------");
 const ex24Text = "this is a test string";
 console.log(ex24_title_case_1.toTitleCaseRegExp(ex24Text));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 25: Given a number array and a number, return true if the array values are a permutation of number, false otherwise.
+console.log("Ex 25: Given a number array and a number, return true if the array values are a permutation of number. \n" +
+    "------------------------------------------------------------------------------------------------------");
+const ex25Numberlist = [1, 2, 3, 4, 5, 6];
+const ex25Number = 6;
+console.log(`Number list: ${ex25Numberlist}: Number: ${ex25Number}:`, ex25_permutation_1.isPermutation(ex25Numberlist, ex25Number));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
