@@ -46,6 +46,7 @@ const ex23_bigger_number_1 = require("./exercises/ex23-bigger-number");
 const ex24_title_case_1 = require("./exercises/ex24-title-case");
 const ex25_permutation_1 = require("./exercises/ex25-permutation");
 const ex26_upper_lower_case_1 = require("./exercises/ex26-upper-lower-case");
+const ex27_fibonacci_1 = require("./exercises/ex27-fibonacci");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -289,5 +290,13 @@ console.log("Ex 26: Given a text, return text to lowercase if the number of lowe
 const ex26text = "THIS IS A TEST String";
 console.log(`Text: ${ex26text} -> `, ex26_upper_lower_case_1.toUpperOrLowerCase(ex26text));
 console.log(`Text: ${ex26text} -> `, ex26_upper_lower_case_1.toUpperOrLowerCaseAlt(ex26text));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 27: Given a number, return fibonacci sequence + result 
+console.log("Ex 27: Given a number, return fibonacci sequence + result. \n" +
+    "---------------------------------------------------------");
+const ex27Digit = 10;
+console.log(ex27_fibonacci_1.fibonacci(ex27Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
