@@ -22,6 +22,7 @@ import { printFilmsByView } from './exercises/ex20-show-movies';
 import { isAnagram } from './exercises/ex21-check-anagram';
 import { cutText } from './exercises/ex22-cut-text';
 import { printBiggerSmaller } from './exercises/ex23-bigger-number';
+import { toTitleCase, toTitleCaseRegExp } from './exercises/ex24-title-case';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -267,5 +268,14 @@ console.log("Ex 23: Given a two numbers, define which is bigger and which is sma
 const ex23digitOne = 18;
 const ex23digitTwo = 10;
 console.log(printBiggerSmaller(ex23digitOne, ex23digitTwo));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 24: Given a string, returns it converted to Title Case
+console.log("Ex 24: Given a string, returns it converted to Title Case \n" +
+            "---------------------------------------------------------");
+const ex24Text: string = "This Is a test string";
+console.log(toTitleCaseRegExp(ex24Text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

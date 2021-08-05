@@ -43,6 +43,7 @@ const ex20_show_movies_1 = require("./exercises/ex20-show-movies");
 const ex21_check_anagram_1 = require("./exercises/ex21-check-anagram");
 const ex22_cut_text_1 = require("./exercises/ex22-cut-text");
 const ex23_bigger_number_1 = require("./exercises/ex23-bigger-number");
+const ex24_title_case_1 = require("./exercises/ex24-title-case");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -260,5 +261,13 @@ console.log("Ex 23: Given a two numbers, define which is bigger and which is sma
 const ex23digitOne = 18;
 const ex23digitTwo = 10;
 console.log(ex23_bigger_number_1.printBiggerSmaller(ex23digitOne, ex23digitTwo));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 24: Given a string, returns it converted to Title Case
+console.log("Ex 24: Given a string, returns it converted to Title Case \n" +
+    "---------------------------------------------------------");
+const ex24Text = "This Is a test string";
+console.log(ex24_title_case_1.toTitleCaseRegExp(ex24Text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
