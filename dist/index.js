@@ -45,6 +45,7 @@ const ex22_cut_text_1 = require("./exercises/ex22-cut-text");
 const ex23_bigger_number_1 = require("./exercises/ex23-bigger-number");
 const ex24_title_case_1 = require("./exercises/ex24-title-case");
 const ex25_permutation_1 = require("./exercises/ex25-permutation");
+const ex26_upper_lower_case_1 = require("./exercises/ex26-upper-lower-case");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -279,5 +280,13 @@ console.log("Ex 25: Given a number array and a number, return true if the array 
 const ex25Numberlist = [1, 2, 3, 4, 5, 6];
 const ex25Number = 6;
 console.log(`Number list: ${ex25Numberlist}: Number: ${ex25Number}:`, ex25_permutation_1.isPermutation(ex25Numberlist, ex25Number));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 26: Given a text, return text to lowercase if the number of lowercase letters is greater than uppercase letters 
+console.log("Ex 26: Given a text, return text to lowercase if the number of lowercase letters is greater than uppercase letters. \n" +
+    "-------------------------------------------------------------------------------------------------------------------");
+const ex26text = "THIS IS A TEST String";
+console.log(`Text: ${ex26text} -> `, ex26_upper_lower_case_1.toUpperOrLowerCase(ex26text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
