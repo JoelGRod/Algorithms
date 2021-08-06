@@ -27,6 +27,7 @@ import { isPermutation } from './exercises/ex25-permutation';
 import { toUpperOrLowerCase, toUpperOrLowerCaseAlt } from './exercises/ex26-upper-lower-case';
 import { fibonacci, fiboRecursive, memoizedFibo } from './exercises/ex27-fibonacci';
 import { getYearsMonthsDays } from './exercises/ex28-years-months-days-by-number';
+import { factorial, factorialRecursive } from './exercises/ex29-factorial';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -321,5 +322,15 @@ console.log("Ex 28: Given a number (days), return years, months and days passed.
             "------------------------------------------------------------------");
 const ex28Digit: number = 920;
 console.log(getYearsMonthsDays(ex28Digit));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 29: Given a number return the factorial
+console.log("Ex 29: Given a number return the factorial. \n" +
+            "------------------------------------------");
+const ex29Digit: number = 10;
+console.log(factorial(ex29Digit));
+console.log(factorialRecursive(ex29Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
