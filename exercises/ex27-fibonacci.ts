@@ -15,7 +15,7 @@ export function fibonacci(digit: number): number {
 
 }
 
-// Recursive Fibonacci
+// Recursive Fibonacci O(2^n)
 export function fiboRecursive(digit: number): number {
 
     if(digit <= 1) return digit;                                        // Base Case
@@ -24,7 +24,7 @@ export function fiboRecursive(digit: number): number {
 
 }
 
-// Recursive memoized fibonacci
+// Recursive memoized fibonacci O(n) with stacks problems
 let memo: number[] = [];
 
 export function memoizedFibo(digit: number): number {

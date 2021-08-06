@@ -13,14 +13,14 @@ function fibonacci(digit) {
     return fiboList[digit];
 }
 exports.fibonacci = fibonacci;
-// Recursive Fibonacci
+// Recursive Fibonacci O(2^n)
 function fiboRecursive(digit) {
     if (digit <= 1)
         return digit; // Base Case
     return fiboRecursive(digit - 1) + fiboRecursive(digit - 2); // Recursive Call
 }
 exports.fiboRecursive = fiboRecursive;
-// Recursive memoized fibonacci
+// Recursive memoized fibonacci O(n) with stacks problems
 let memo = [];
 function memoizedFibo(digit) {
     if (memo[digit] !== undefined)
