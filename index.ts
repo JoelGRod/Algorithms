@@ -316,7 +316,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 
 // ------------------------------------------------------------------------------------- //
-// Ex 28: Given a number (days), return years, months and days passed 
+// Ex 28: Given a number (days), return years, months and days passed
 console.log("Ex 28: Given a number (days), return years, months and days passed. \n" +
             "------------------------------------------------------------------");
 const ex28Digit: number = 920;

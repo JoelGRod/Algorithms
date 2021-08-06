@@ -304,7 +304,7 @@ console.log(ex27_fibonacci_1.memoizedFibo(ex27Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // ------------------------------------------------------------------------------------- //
-// Ex 28: Given a number (days), return years, months and days passed 
+// Ex 28: Given a number (days), return years, months and days passed
 console.log("Ex 28: Given a number (days), return years, months and days passed. \n" +
     "------------------------------------------------------------------");
 const ex28Digit = 920;
