@@ -25,7 +25,7 @@ import { printBiggerSmaller } from './exercises/ex23-bigger-number';
 import { toTitleCaseRegExp } from './exercises/ex24-title-case';
 import { isPermutation } from './exercises/ex25-permutation';
 import { toUpperOrLowerCase, toUpperOrLowerCaseAlt } from './exercises/ex26-upper-lower-case';
-import { fibonacci } from './exercises/ex27-fibonacci';
+import { fibonacci, fiboRecursive, memoizedFibo } from './exercises/ex27-fibonacci';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -309,5 +309,7 @@ console.log("Ex 27: Given a number, return fibonacci sequence + result. \n" +
             "---------------------------------------------------------");
 const ex27Digit: number = 10;
 console.log(fibonacci(ex27Digit));
+console.log(fiboRecursive(ex27Digit));
+console.log(memoizedFibo(ex27Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

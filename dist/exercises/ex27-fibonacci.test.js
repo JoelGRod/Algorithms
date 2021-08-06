@@ -6,7 +6,19 @@ describe("Exercise 27", () => {
     test("fibonacci is defined", () => {
         expect(ex27_fibonacci_1.fibonacci).toBeDefined();
     });
-    test("fibonacci is returns fibonacci sequence sum", () => {
-        expect(ex27_fibonacci_1.fibonacci(digit)).toBe(143);
+    test("fiboRecursive is defined", () => {
+        expect(ex27_fibonacci_1.fiboRecursive).toBeDefined();
+    });
+    test("memoizedFibo is defined", () => {
+        expect(ex27_fibonacci_1.memoizedFibo).toBeDefined();
+    });
+    test("fibonacci returns correct fibonacci sequence number", () => {
+        expect(ex27_fibonacci_1.fibonacci(digit)).toBe(55);
+    });
+    test("fiboRecursive returns correct fibonacci sequence number", () => {
+        expect(ex27_fibonacci_1.fiboRecursive(digit)).toBe(55);
+    });
+    test("memoizedFibo returns correct fibonacci sequence number", () => {
+        expect(ex27_fibonacci_1.memoizedFibo(digit)).toBe(55);
     });
 });

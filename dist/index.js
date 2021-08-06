@@ -298,5 +298,7 @@ console.log("Ex 27: Given a number, return fibonacci sequence + result. \n" +
     "---------------------------------------------------------");
 const ex27Digit = 10;
 console.log(ex27_fibonacci_1.fibonacci(ex27Digit));
+console.log(ex27_fibonacci_1.fiboRecursive(ex27Digit));
+console.log(ex27_fibonacci_1.memoizedFibo(ex27Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
