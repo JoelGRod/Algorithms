@@ -1,4 +1,7 @@
 "use strict";
+/**
+ * Given a number return return true if capicua, false otherwise
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.checkCapicua = void 0;
 function checkCapicua(digit) {
