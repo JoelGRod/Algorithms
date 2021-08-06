@@ -49,6 +49,7 @@ const ex26_upper_lower_case_1 = require("./exercises/ex26-upper-lower-case");
 const ex27_fibonacci_1 = require("./exercises/ex27-fibonacci");
 const ex28_years_months_days_by_number_1 = require("./exercises/ex28-years-months-days-by-number");
 const ex29_factorial_1 = require("./exercises/ex29-factorial");
+const ex30_check_capicua_numbers_1 = require("./exercises/ex30-check-capicua-numbers");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -319,5 +320,15 @@ console.log("Ex 29: Given a number return the factorial. \n" +
 const ex29Digit = 10;
 console.log(ex29_factorial_1.factorial(ex29Digit));
 console.log(ex29_factorial_1.factorialRecursive(ex29Digit));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 30: Given a number return return true if capicua, false otherwise
+console.log("Ex 30: Given a number return return true if capicua, false otherwise. \n" +
+    "--------------------------------------------------------------------");
+const ex30DigitCapicua = 1991;
+const ex30DigitNonCapicua = 2014;
+console.log(ex30_check_capicua_numbers_1.checkCapicua(ex30DigitCapicua));
+console.log(ex30_check_capicua_numbers_1.checkCapicua(ex30DigitNonCapicua));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

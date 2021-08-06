@@ -28,6 +28,7 @@ import { toUpperOrLowerCase, toUpperOrLowerCaseAlt } from './exercises/ex26-uppe
 import { fibonacci, fiboRecursive, memoizedFibo } from './exercises/ex27-fibonacci';
 import { getYearsMonthsDays } from './exercises/ex28-years-months-days-by-number';
 import { factorial, factorialRecursive } from './exercises/ex29-factorial';
+import { checkCapicua } from './exercises/ex30-check-capicua-numbers';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -332,5 +333,16 @@ console.log("Ex 29: Given a number return the factorial. \n" +
 const ex29Digit: number = 10;
 console.log(factorial(ex29Digit));
 console.log(factorialRecursive(ex29Digit));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 30: Given a number return return true if capicua, false otherwise
+console.log("Ex 30: Given a number return return true if capicua, false otherwise. \n" +
+            "--------------------------------------------------------------------");
+const ex30DigitCapicua: number = 1991;
+const ex30DigitNonCapicua: number = 2014;
+console.log(checkCapicua(ex30DigitCapicua));
+console.log(checkCapicua(ex30DigitNonCapicua));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
