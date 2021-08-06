@@ -47,6 +47,7 @@ const ex24_title_case_1 = require("./exercises/ex24-title-case");
 const ex25_permutation_1 = require("./exercises/ex25-permutation");
 const ex26_upper_lower_case_1 = require("./exercises/ex26-upper-lower-case");
 const ex27_fibonacci_1 = require("./exercises/ex27-fibonacci");
+const ex28_years_months_days_by_number_1 = require("./exercises/ex28-years-months-days-by-number");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -300,5 +301,13 @@ const ex27Digit = 10;
 console.log(ex27_fibonacci_1.fibonacci(ex27Digit));
 console.log(ex27_fibonacci_1.fiboRecursive(ex27Digit));
 console.log(ex27_fibonacci_1.memoizedFibo(ex27Digit));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 28: Given a number (days), return years, months and days passed 
+console.log("Ex 28: Given a number (days), return years, months and days passed. \n" +
+    "------------------------------------------------------------------");
+const ex28Digit = 920;
+console.log(ex28_years_months_days_by_number_1.getYearsMonthsDays(ex28Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
