@@ -29,6 +29,7 @@ import { fibonacci, fiboRecursive, memoizedFibo } from './exercises/ex27-fibonac
 import { getYearsMonthsDays } from './exercises/ex28-years-months-days-by-number';
 import { factorial, factorialRecursive } from './exercises/ex29-factorial';
 import { checkCapicua } from './exercises/ex30-check-capicua-numbers';
+import { removeDuplicatesAndStrings } from './exercises/ex31-no-duplicates-no-strings';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -337,12 +338,21 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 
 // ------------------------------------------------------------------------------------- //
-// Ex 30: Given a number return return true if capicua, false otherwise
+// Ex 30: Given a number return true if capicua, false otherwise
 console.log("Ex 30: Given a number return true if capicua, false otherwise. \n" +
             "--------------------------------------------------------------------");
 const ex30DigitCapicua: number = 1991;
 const ex30DigitNonCapicua: number = 2014;
 console.log(checkCapicua(ex30DigitCapicua));
 console.log(checkCapicua(ex30DigitNonCapicua));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 31: Given a number array return the same array without strings and duplicates
+console.log("Ex 31: Given a number array return the same array without strings and duplicates. \n" +
+            "--------------------------------------------------------------------------------");
+const ex31list: any = [5, 5, 10000, 56000, "hello", 45, "Hi", "SOme string", 87, 56000, 45];
+console.log(removeDuplicatesAndStrings(ex31list));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

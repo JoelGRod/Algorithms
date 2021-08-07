@@ -50,6 +50,7 @@ const ex27_fibonacci_1 = require("./exercises/ex27-fibonacci");
 const ex28_years_months_days_by_number_1 = require("./exercises/ex28-years-months-days-by-number");
 const ex29_factorial_1 = require("./exercises/ex29-factorial");
 const ex30_check_capicua_numbers_1 = require("./exercises/ex30-check-capicua-numbers");
+const ex31_no_duplicates_no_strings_1 = require("./exercises/ex31-no-duplicates-no-strings");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -323,12 +324,20 @@ console.log(ex29_factorial_1.factorialRecursive(ex29Digit));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // ------------------------------------------------------------------------------------- //
-// Ex 30: Given a number return return true if capicua, false otherwise
-console.log("Ex 30: Given a number return return true if capicua, false otherwise. \n" +
+// Ex 30: Given a number return true if capicua, false otherwise
+console.log("Ex 30: Given a number return true if capicua, false otherwise. \n" +
     "--------------------------------------------------------------------");
 const ex30DigitCapicua = 1991;
 const ex30DigitNonCapicua = 2014;
 console.log(ex30_check_capicua_numbers_1.checkCapicua(ex30DigitCapicua));
 console.log(ex30_check_capicua_numbers_1.checkCapicua(ex30DigitNonCapicua));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 31: Given a number array return the same array without strings and duplicates
+console.log("Ex 31: Given a number array return the same array without strings and duplicates. \n" +
+    "--------------------------------------------------------------------------------");
+const ex31list = [5, 5, 10000, 56000, "hello", 45, "Hi", "SOme string", 87, 56000, 45];
+console.log(ex31_no_duplicates_no_strings_1.removeDuplicatesAndStrings(ex31list));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
