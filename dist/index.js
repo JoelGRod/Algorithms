@@ -51,6 +51,7 @@ const ex28_years_months_days_by_number_1 = require("./exercises/ex28-years-month
 const ex29_factorial_1 = require("./exercises/ex29-factorial");
 const ex30_check_capicua_numbers_1 = require("./exercises/ex30-check-capicua-numbers");
 const ex31_no_duplicates_no_strings_1 = require("./exercises/ex31-no-duplicates-no-strings");
+const ex32_geometric_angles_1 = require("./exercises/ex32-geometric-angles");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -339,5 +340,13 @@ console.log("Ex 31: Given a number array return the same array without strings a
     "--------------------------------------------------------------------------------");
 const ex31list = [5, 5, 10000, 56000, "hello", 45, "Hi", "SOme string", 87, 56000, 45];
 console.log(ex31_no_duplicates_no_strings_1.removeDuplicatesAndStrings(ex31list));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 32: Given a number return what kind of angle represents
+console.log("Ex 32: Given a number return what kind of angle represents. \n" +
+    "--------------------------------------------------------------------------------");
+const ex32Angle = 130;
+console.log(ex32_geometric_angles_1.getAngle(ex32Angle));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

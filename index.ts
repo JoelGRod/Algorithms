@@ -30,6 +30,7 @@ import { getYearsMonthsDays } from './exercises/ex28-years-months-days-by-number
 import { factorial, factorialRecursive } from './exercises/ex29-factorial';
 import { checkCapicua } from './exercises/ex30-check-capicua-numbers';
 import { removeDuplicatesAndStrings } from './exercises/ex31-no-duplicates-no-strings';
+import { getAngle } from './exercises/ex32-geometric-angles';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -354,5 +355,14 @@ console.log("Ex 31: Given a number array return the same array without strings a
             "--------------------------------------------------------------------------------");
 const ex31list: any = [5, 5, 10000, 56000, "hello", 45, "Hi", "SOme string", 87, 56000, 45];
 console.log(removeDuplicatesAndStrings(ex31list));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 32: Given a number return what kind of angle represents
+console.log("Ex 32: Given a number return what kind of angle represents. \n" +
+            "--------------------------------------------------------------------------------");
+const ex32Angle: number = 130;
+console.log(getAngle(ex32Angle));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
