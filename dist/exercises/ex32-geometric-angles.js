@@ -1,4 +1,7 @@
 "use strict";
+/**
+ * Given a number return what kind of angle represents.
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAngle = void 0;
 function getAngle(angle) {

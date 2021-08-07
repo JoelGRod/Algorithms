@@ -1,4 +1,6 @@
-
+/**
+ * Given a number array return the same array without strings and duplicates.
+ */
 
 export function removeDuplicatesAndStrings(list: any[]) {
 

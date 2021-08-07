@@ -1,4 +1,7 @@
 "use strict";
+/**
+ * Given a number array return the same array without strings and duplicates.
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.removeDuplicatesAndStrings = void 0;
 function removeDuplicatesAndStrings(list) {

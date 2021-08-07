@@ -1,3 +1,6 @@
+/**
+ * Given a number return what kind of angle represents.
+ */
 
 export function getAngle(angle: number): string {
 
