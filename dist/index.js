@@ -52,6 +52,7 @@ const ex29_factorial_1 = require("./exercises/ex29-factorial");
 const ex30_check_capicua_numbers_1 = require("./exercises/ex30-check-capicua-numbers");
 const ex31_no_duplicates_no_strings_1 = require("./exercises/ex31-no-duplicates-no-strings");
 const ex32_geometric_angles_1 = require("./exercises/ex32-geometric-angles");
+const ex33_squared_numbers_array_1 = require("./exercises/ex33-squared-numbers-array");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -345,8 +346,16 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 32: Given a number return what kind of angle represents
 console.log("Ex 32: Given a number return what kind of angle represents. \n" +
-    "--------------------------------------------------------------------------------");
+    "-----------------------------------------------------------");
 const ex32Angle = 130;
 console.log(ex32_geometric_angles_1.getAngle(ex32Angle));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 33: Given a number array return every number to the power of two
+console.log("Ex 33: Given a number array return every number to the power of two. \n" +
+    "--------------------------------------------------------------------");
+const numberList = ["Hello", "John", 2, 5, 10, "Peter"];
+console.log(ex33_squared_numbers_array_1.getSquaredList(numberList));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

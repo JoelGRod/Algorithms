@@ -31,6 +31,7 @@ import { factorial, factorialRecursive } from './exercises/ex29-factorial';
 import { checkCapicua } from './exercises/ex30-check-capicua-numbers';
 import { removeDuplicatesAndStrings } from './exercises/ex31-no-duplicates-no-strings';
 import { getAngle } from './exercises/ex32-geometric-angles';
+import { getSquaredList } from './exercises/ex33-squared-numbers-array';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -361,8 +362,17 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 32: Given a number return what kind of angle represents
 console.log("Ex 32: Given a number return what kind of angle represents. \n" +
-            "--------------------------------------------------------------------------------");
+            "-----------------------------------------------------------");
 const ex32Angle: number = 130;
 console.log(getAngle(ex32Angle));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 33: Given a number array return every number to the power of two
+console.log("Ex 33: Given a number array return every number to the power of two. \n" +
+            "--------------------------------------------------------------------");
+const numberList: any[] = ["Hello", "John", 2, 5, 10, "Peter"];
+console.log(getSquaredList(numberList));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

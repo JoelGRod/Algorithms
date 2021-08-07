@@ -21,3 +21,7 @@ export function getCharMap(text: string): {[key: string]: number} {
 
     return charMap;
 }
+
+export function filterList(type: string, list: any[]) {
+    return list.filter( element => typeof element === type)
+}

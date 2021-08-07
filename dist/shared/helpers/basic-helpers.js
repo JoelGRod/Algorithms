@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getCharMap = exports.printTextListResults = exports.normalizeText = void 0;
+exports.filterList = exports.getCharMap = exports.printTextListResults = exports.normalizeText = void 0;
 function normalizeText(text) {
     return text.toLowerCase().replace(/[!.,]/g, '').trim();
 }
@@ -24,3 +24,7 @@ function getCharMap(text) {
     return charMap;
 }
 exports.getCharMap = getCharMap;
+function filterList(type, list) {
+    return list.filter(element => typeof element === type);
+}
+exports.filterList = filterList;
