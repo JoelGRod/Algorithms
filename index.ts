@@ -338,7 +338,7 @@ console.log('----------------------------------------------------------------');
 
 // ------------------------------------------------------------------------------------- //
 // Ex 30: Given a number return return true if capicua, false otherwise
-console.log("Ex 30: Given a number return return true if capicua, false otherwise. \n" +
+console.log("Ex 30: Given a number return true if capicua, false otherwise. \n" +
             "--------------------------------------------------------------------");
 const ex30DigitCapicua: number = 1991;
 const ex30DigitNonCapicua: number = 2014;
