@@ -53,6 +53,7 @@ const ex30_check_capicua_numbers_1 = require("./exercises/ex30-check-capicua-num
 const ex31_no_duplicates_no_strings_1 = require("./exercises/ex31-no-duplicates-no-strings");
 const ex32_geometric_angles_1 = require("./exercises/ex32-geometric-angles");
 const ex33_squared_numbers_array_1 = require("./exercises/ex33-squared-numbers-array");
+const ex34_clock_1 = require("./exercises/ex34-clock");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -357,5 +358,16 @@ console.log("Ex 33: Given a number array return every number to the power of two
     "--------------------------------------------------------------------");
 const numberList = ["Hello", "John", 2, 5, 10, "Peter"];
 console.log(ex33_squared_numbers_array_1.getSquaredList(numberList));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 34: Clock
+console.log("Ex 34: A clock. \n" +
+    "--------------------------------------------------------------------");
+const ex34Clock = new ex34_clock_1.Clock();
+ex34Clock.showClock();
+setTimeout(() => {
+    ex34Clock.stopInterval();
+}, 10000);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

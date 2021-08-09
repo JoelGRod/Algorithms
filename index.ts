@@ -32,6 +32,7 @@ import { checkCapicua } from './exercises/ex30-check-capicua-numbers';
 import { removeDuplicatesAndStrings } from './exercises/ex31-no-duplicates-no-strings';
 import { getAngle } from './exercises/ex32-geometric-angles';
 import { getSquaredList } from './exercises/ex33-squared-numbers-array';
+import { Clock } from './exercises/ex34-clock';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -374,5 +375,17 @@ console.log("Ex 33: Given a number array return every number to the power of two
             "--------------------------------------------------------------------");
 const numberList: any[] = ["Hello", "John", 2, 5, 10, "Peter"];
 console.log(getSquaredList(numberList));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 34: Clock
+console.log("Ex 34: A clock. \n" +
+            "--------------------------------------------------------------------");
+const ex34Clock = new Clock();
+ex34Clock.showClock();
+setTimeout(() => {
+    ex34Clock.stopInterval();
+}, 10000);
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
