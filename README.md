@@ -1,7 +1,7 @@
 # Logic-Problems-Ts
 Some logic problems with TypeScript. Practice purposes.
 
-// Ex 1: Count words from pre-defined text
+* Ex 1: Count words from pre-defined text
 
 // Ex 2: Create the multiplication table of a specific number
 
