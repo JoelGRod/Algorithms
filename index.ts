@@ -36,6 +36,7 @@ import { Clock } from './exercises/ex34-clock';
 import basicMathOperations from './exercises/ex35-basic-math-operations';
 import getFirstAndLast from './exercises/ex36-first-last';
 import getVocalsAndConsonants from './exercises/ex37-count-vocals-consonants';
+import getElementWithMoreOccurrences from './exercises/ex38-element-appearance';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -415,5 +416,14 @@ console.log("Ex 37: Given a text return the number of consonants and vocals insi
             "------------------------------------------------------------------------");
 // console.log(getVocalsAndConsonants("Pablito clavo Un clavito, cuantos clavitos clavo pablito áé12"));
 console.log(getVocalsAndConsonants("$·%&/()=^*¨Ç_:;jajojú!ª·$%-*/+pepé"));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 38: Given a text or an array return the element that appears the most.
+console.log("Ex 38: Given a text or an array return the element that appears the most. \n" +
+            "------------------------------------------------------------------------");
+console.log(getElementWithMoreOccurrences("Hola, mejor que hola"));
+console.log(getElementWithMoreOccurrences([1, 2, 3, 5, 8, 2, 1, 3]));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

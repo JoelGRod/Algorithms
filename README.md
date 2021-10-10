@@ -75,5 +75,7 @@ Some logic problems with TypeScript. Practice purposes.
 
 * Ex 37: Given a text return the number of consonants and vocals inside it
 
+* Ex 38: Given a text or an array return the element that appears the most
+
 
 

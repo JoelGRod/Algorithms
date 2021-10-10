@@ -59,6 +59,7 @@ const ex33_squared_numbers_array_1 = require("./exercises/ex33-squared-numbers-a
 const ex35_basic_math_operations_1 = __importDefault(require("./exercises/ex35-basic-math-operations"));
 const ex36_first_last_1 = __importDefault(require("./exercises/ex36-first-last"));
 const ex37_count_vocals_consonants_1 = __importDefault(require("./exercises/ex37-count-vocals-consonants"));
+const ex38_element_appearance_1 = __importDefault(require("./exercises/ex38-element-appearance"));
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -396,5 +397,13 @@ console.log("Ex 37: Given a text return the number of consonants and vocals insi
     "------------------------------------------------------------------------");
 // console.log(getVocalsAndConsonants("Pablito clavo Un clavito, cuantos clavitos clavo pablito áé12"));
 console.log(ex37_count_vocals_consonants_1.default("$·%&/()=^*¨Ç_:;jajojú!ª·$%-*/+pepé"));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 38: Given a text or an array return the element that appears the most.
+console.log("Ex 38: Given a text or an array return the element that appears the most. \n" +
+    "------------------------------------------------------------------------");
+console.log(ex38_element_appearance_1.default("Hola, mejor que hola"));
+console.log(ex38_element_appearance_1.default([1, 2, 3, 5, 8, 2, 1, 3]));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
