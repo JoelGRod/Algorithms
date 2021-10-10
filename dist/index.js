@@ -18,6 +18,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const basicHelpers = __importStar(require("./shared/helpers/basic-helpers"));
 const ex1_words_counter_1 = require("./exercises/ex1-words-counter");
@@ -53,7 +56,9 @@ const ex30_check_capicua_numbers_1 = require("./exercises/ex30-check-capicua-num
 const ex31_no_duplicates_no_strings_1 = require("./exercises/ex31-no-duplicates-no-strings");
 const ex32_geometric_angles_1 = require("./exercises/ex32-geometric-angles");
 const ex33_squared_numbers_array_1 = require("./exercises/ex33-squared-numbers-array");
-const ex34_clock_1 = require("./exercises/ex34-clock");
+const ex35_basic_math_operations_1 = __importDefault(require("./exercises/ex35-basic-math-operations"));
+const ex36_first_last_1 = __importDefault(require("./exercises/ex36-first-last"));
+const ex37_count_vocals_consonants_1 = __importDefault(require("./exercises/ex37-count-vocals-consonants"));
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -362,12 +367,34 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // ------------------------------------------------------------------------------------- //
 // Ex 34: Clock
-console.log("Ex 34: A clock. \n" +
+console.log("Ex 34: A clock. Non blocking function \n" +
     "--------------------------------------------------------------------");
-const ex34Clock = new ex34_clock_1.Clock();
-ex34Clock.showClock();
-setTimeout(() => {
-    ex34Clock.stopInterval();
-}, 10000);
+// const ex34Clock = new Clock();
+// ex34Clock.showClock();
+// setTimeout(() => {
+//     ex34Clock.stopInterval();
+// }, 10000);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 35: Basic math operations
+console.log("Ex 35: Given two numbers return basic math oprations ( + - * / ) between them. \n" +
+    "-----------------------------------------------------------------------------");
+console.log(ex35_basic_math_operations_1.default(5, 8));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 36: Given an array return a new one with the first and last digit
+console.log("Ex 36: Given an array return a new one with the first and last digit. \n" +
+    "--------------------------------------------------------------------");
+console.log(ex36_first_last_1.default([100, 200, 300, 400, 500, 650, 700]));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 37: Given a text return the number of consonants and vocals inside it.
+console.log("Ex 37: Given a text return the number of consonants and vocals inside it. \n" +
+    "------------------------------------------------------------------------");
+// console.log(getVocalsAndConsonants("Pablito clavo Un clavito, cuantos clavitos clavo pablito áé12"));
+console.log(ex37_count_vocals_consonants_1.default("$·%&/()=^*¨Ç_:;jajojú!ª·$%-*/+pepé"));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

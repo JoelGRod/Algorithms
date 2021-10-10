@@ -68,3 +68,12 @@ Some logic problems with TypeScript. Practice purposes.
 * Ex 33: Given a number array return every number to the power of two
 
 * Ex 34: Clock
+
+* Ex 35: Given two numbers return basic math oprations ( + - * / ) between them
+
+* Ex 36: Given an array return a new one with the first and last digit
+
+* Ex 37: Given a text return the number of consonants and vocals inside it
+
+
+

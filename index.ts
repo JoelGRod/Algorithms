@@ -33,6 +33,9 @@ import { removeDuplicatesAndStrings } from './exercises/ex31-no-duplicates-no-st
 import { getAngle } from './exercises/ex32-geometric-angles';
 import { getSquaredList } from './exercises/ex33-squared-numbers-array';
 import { Clock } from './exercises/ex34-clock';
+import basicMathOperations from './exercises/ex35-basic-math-operations';
+import getFirstAndLast from './exercises/ex36-first-last';
+import getVocalsAndConsonants from './exercises/ex37-count-vocals-consonants';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -380,12 +383,37 @@ console.log('----------------------------------------------------------------');
 
 // ------------------------------------------------------------------------------------- //
 // Ex 34: Clock
-console.log("Ex 34: A clock. \n" +
+console.log("Ex 34: A clock. Non blocking function \n" +
             "--------------------------------------------------------------------");
-const ex34Clock = new Clock();
-ex34Clock.showClock();
-setTimeout(() => {
-    ex34Clock.stopInterval();
-}, 10000);
+// const ex34Clock = new Clock();
+// ex34Clock.showClock();
+// setTimeout(() => {
+//     ex34Clock.stopInterval();
+// }, 10000);
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 35: Basic math operations
+console.log("Ex 35: Given two numbers return basic math oprations ( + - * / ) between them. \n" +
+            "-----------------------------------------------------------------------------");
+console.log( basicMathOperations(5, 8));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 36: Given an array return a new one with the first and last digit
+console.log("Ex 36: Given an array return a new one with the first and last digit. \n" +
+            "--------------------------------------------------------------------");
+console.log(getFirstAndLast([100, 200, 300, 400, 500, 650, 700]));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 37: Given a text return the number of consonants and vocals inside it.
+console.log("Ex 37: Given a text return the number of consonants and vocals inside it. \n" +
+            "------------------------------------------------------------------------");
+// console.log(getVocalsAndConsonants("Pablito clavo Un clavito, cuantos clavitos clavo pablito áé12"));
+console.log(getVocalsAndConsonants("$·%&/()=^*¨Ç_:;jajojú!ª·$%-*/+pepé"));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
