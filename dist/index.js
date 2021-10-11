@@ -454,6 +454,7 @@ console.log('----------------------------------------------------------------');
 // Ex 44: Given an array of numbers return the mean of the numbers.
 console.log("Ex 44: Given an array of numbers return the mean of the numbers. \n" +
     "---------------------------------------------------------------");
-console.log(ex44_numbers_mean_1.default([10, 10, 10, 5, 10, 5, 10, 5]));
+const ex44NumberArray = [10, 10, 10, 5, 10, 5, 10, 5];
+console.log(ex44_numbers_mean_1.default(...ex44NumberArray));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

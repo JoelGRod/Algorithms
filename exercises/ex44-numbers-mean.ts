@@ -1,5 +1,5 @@
 
-const getMean = ( numbers: number[] ) => {
+const getMean = ( ...numbers: number[] ) => {
     return numbers.reduce(
         (previous, current) => previous + current
     ) / numbers.length;
