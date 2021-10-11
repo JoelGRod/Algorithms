@@ -37,6 +37,11 @@ import basicMathOperations from './exercises/ex35-basic-math-operations';
 import getFirstAndLast from './exercises/ex36-first-last';
 import getVocalsAndConsonants from './exercises/ex37-count-vocals-consonants';
 import getElementWithMoreOccurrences from './exercises/ex38-element-appearance';
+import squareNumbers from './exercises/ex39-square-numbers';
+import checkEmail from './exercises/ex40-check-valid-email';
+import arrayLowerHigher from './exercises/ex41-array-lower-higher-value';
+import asterisksTriangle from './exercises/ex42-asterisks-triangle';
+import { aleatoryNumber, aleatoryNumberFloat } from './exercises/ex43-aleatory-number';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -425,5 +430,47 @@ console.log("Ex 38: Given a text or an array return the element that appears the
             "------------------------------------------------------------------------");
 console.log(getElementWithMoreOccurrences("Hola, mejor que hola"));
 console.log(getElementWithMoreOccurrences([1, 2, 3, 5, 8, 2, 1, 3]));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 39: Given a number return the list with the squares of the natural numbers.
+console.log("Ex 39: Given a number return the list with the squares of the natural numbers. \n" +
+            "-----------------------------------------------------------------------------");
+console.log(squareNumbers(8));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 40: Given an email return true or false if is valid or not.
+console.log("Ex 40: Given an email return true or false if is valid or not. \n" +
+            "--------------------------------------------------------------");
+console.log("test@test.com: ", checkEmail("test@test.com"));
+console.log("test/test.com: ", checkEmail("test/test.com"));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 41: Given a number array return lower and higher value.
+console.log("Ex 41: Given a number array return lower and higher value. \n" +
+            "----------------------------------------------------------");
+console.log(arrayLowerHigher([1, 5, 8, 24, 4, 3, 12, 23]));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 42: Given a number return an asterisks triangle with n rows.
+console.log("Ex 42: Given a number return an asterisks triangle with n rows. \n" +
+            "--------------------------------------------------------------");
+console.log(asterisksTriangle(10));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 43: Given two numbers return an aleatory number between them.
+console.log("Ex 43: Given two numbers return an aleatory number between them. \n" +
+            "---------------------------------------------------------------");
+console.log(aleatoryNumber(10, 20));
+console.log(aleatoryNumberFloat(10, 20));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

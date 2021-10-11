@@ -60,6 +60,11 @@ const ex35_basic_math_operations_1 = __importDefault(require("./exercises/ex35-b
 const ex36_first_last_1 = __importDefault(require("./exercises/ex36-first-last"));
 const ex37_count_vocals_consonants_1 = __importDefault(require("./exercises/ex37-count-vocals-consonants"));
 const ex38_element_appearance_1 = __importDefault(require("./exercises/ex38-element-appearance"));
+const ex39_square_numbers_1 = __importDefault(require("./exercises/ex39-square-numbers"));
+const ex40_check_valid_email_1 = __importDefault(require("./exercises/ex40-check-valid-email"));
+const ex41_array_lower_higher_value_1 = __importDefault(require("./exercises/ex41-array-lower-higher-value"));
+const ex42_asterisks_triangle_1 = __importDefault(require("./exercises/ex42-asterisks-triangle"));
+const ex43_aleatory_number_1 = require("./exercises/ex43-aleatory-number");
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -405,5 +410,42 @@ console.log("Ex 38: Given a text or an array return the element that appears the
     "------------------------------------------------------------------------");
 console.log(ex38_element_appearance_1.default("Hola, mejor que hola"));
 console.log(ex38_element_appearance_1.default([1, 2, 3, 5, 8, 2, 1, 3]));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 39: Given a number return the list with the squares of the natural numbers.
+console.log("Ex 39: Given a number return the list with the squares of the natural numbers. \n" +
+    "-----------------------------------------------------------------------------");
+console.log(ex39_square_numbers_1.default(8));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 40: Given an email return true or false if is valid or not.
+console.log("Ex 40: Given an email return true or false if is valid or not. \n" +
+    "--------------------------------------------------------------");
+console.log("test@test.com: ", ex40_check_valid_email_1.default("test@test.com"));
+console.log("test/test.com: ", ex40_check_valid_email_1.default("test/test.com"));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 41: Given a number array return lower and higher value.
+console.log("Ex 41: Given a number array return lower and higher value. \n" +
+    "----------------------------------------------------------");
+console.log(ex41_array_lower_higher_value_1.default([1, 5, 8, 24, 4, 3, 12, 23]));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 42: Given a number return an asterisks triangle with n rows.
+console.log("Ex 42: Given a number return an asterisks triangle with n rows. \n" +
+    "--------------------------------------------------------------");
+console.log(ex42_asterisks_triangle_1.default(10));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 43: Given two numbers return an aleatory number between them.
+console.log("Ex 43: Given two numbers return an aleatory number between them. \n" +
+    "---------------------------------------------------------------");
+console.log(ex43_aleatory_number_1.aleatoryNumber(10, 20));
+console.log(ex43_aleatory_number_1.aleatoryNumberFloat(10, 20));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

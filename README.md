@@ -77,5 +77,12 @@ Some logic problems with TypeScript. Practice purposes.
 
 * Ex 38: Given a text or an array return the element that appears the most
 
+* Ex 39: Given a number return the list with the squares of the natural numbers
 
+* Ex 40: Given an email return true or false if is valid or not
 
+* Ex 41: Given a number array return lower and higher value
+
+* Ex 42: Given a number return an asterisks triangle with n rows
+
+* Ex 43: Given two numbers return an aleatory number between them
