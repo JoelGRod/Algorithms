@@ -86,3 +86,5 @@ Some logic problems with TypeScript. Practice purposes.
 * Ex 42: Given a number return an asterisks triangle with n rows
 
 * Ex 43: Given two numbers return an aleatory number between them
+
+* Ex 44: Given an array of numbers return the mean of the numbers

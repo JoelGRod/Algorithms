@@ -42,6 +42,7 @@ import checkEmail from './exercises/ex40-check-valid-email';
 import arrayLowerHigher from './exercises/ex41-array-lower-higher-value';
 import asterisksTriangle from './exercises/ex42-asterisks-triangle';
 import { aleatoryNumber, aleatoryNumberFloat } from './exercises/ex43-aleatory-number';
+import getMean from './exercises/ex44-numbers-mean';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -472,5 +473,13 @@ console.log("Ex 43: Given two numbers return an aleatory number between them. \n
             "---------------------------------------------------------------");
 console.log(aleatoryNumber(10, 20));
 console.log(aleatoryNumberFloat(10, 20));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 44: Given an array of numbers return the mean of the numbers.
+console.log("Ex 44: Given an array of numbers return the mean of the numbers. \n" +
+            "---------------------------------------------------------------");
+console.log(getMean([10,10,10,5,10,5,10,5]));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
