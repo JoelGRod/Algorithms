@@ -43,6 +43,9 @@ import arrayLowerHigher from './exercises/ex41-array-lower-higher-value';
 import asterisksTriangle from './exercises/ex42-asterisks-triangle';
 import { aleatoryNumber, aleatoryNumberFloat } from './exercises/ex43-aleatory-number';
 import getMean from './exercises/ex44-numbers-mean';
+import getTwoWordsValues from './exercises/ex45-two-words-array';
+import getApprovedAndFailed from './exercises/ex46-approved-suspended';
+import getAllSubstrings from './exercises/ex47-possible-substrings';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -482,5 +485,52 @@ console.log("Ex 44: Given an array of numbers return the mean of the numbers. \n
             "---------------------------------------------------------------");
 const ex44NumberArray = [10,10,10,5,10,5,10,5];
 console.log(getMean(...ex44NumberArray));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 45: Given an array of strings return a new one only with values that have two words.
+console.log("Ex 45: Given an array of strings return a new one only with values that have two words. \n" +
+            "--------------------------------------------------------------------------------------");
+const ex45Words: string[] = ["Hello", "Santa Cruz", "Tenerife", "La Orotava", "Puerto Cruz", "Spain"];
+console.log(getTwoWordsValues(ex45Words));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 46: Given an array of students objects (name and mark) show how many are approved and how many are suspended.
+console.log("Ex 46: Given an array of students objects (name and mark) show how many are approved and how many are suspended. \n" +
+            "---------------------------------------------------------------------------------------------------------------");
+const ex46Students = [
+    {
+        name: "Jose",
+        grade: 5
+    },
+    {
+        name: "Juan",
+        grade: 8
+    },
+    {
+        name: "Alexis",
+        grade: 3
+    },
+    {
+        name: "Enrique",
+        grade: 2
+    },
+    {
+        name: "Carlos",
+        grade: 5
+    },
+]
+console.log(getApprovedAndFailed(ex46Students))
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 47: Given a string return all possible substrings.
+console.log("Ex 47: Given a string return all possible substrings. \n" +
+            "----------------------------------------------------");
+console.log(getAllSubstrings("Hola"));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

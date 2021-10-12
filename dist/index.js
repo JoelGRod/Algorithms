@@ -66,6 +66,9 @@ const ex41_array_lower_higher_value_1 = __importDefault(require("./exercises/ex4
 const ex42_asterisks_triangle_1 = __importDefault(require("./exercises/ex42-asterisks-triangle"));
 const ex43_aleatory_number_1 = require("./exercises/ex43-aleatory-number");
 const ex44_numbers_mean_1 = __importDefault(require("./exercises/ex44-numbers-mean"));
+const ex45_two_words_array_1 = __importDefault(require("./exercises/ex45-two-words-array"));
+const ex46_approved_suspended_1 = __importDefault(require("./exercises/ex46-approved-suspended"));
+const ex47_possible_substrings_1 = __importDefault(require("./exercises/ex47-possible-substrings"));
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -456,5 +459,49 @@ console.log("Ex 44: Given an array of numbers return the mean of the numbers. \n
     "---------------------------------------------------------------");
 const ex44NumberArray = [10, 10, 10, 5, 10, 5, 10, 5];
 console.log(ex44_numbers_mean_1.default(...ex44NumberArray));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 45: Given an array of strings return a new one only with values that have two words.
+console.log("Ex 45: Given an array of strings return a new one only with values that have two words. \n" +
+    "--------------------------------------------------------------------------------------");
+const ex45Words = ["Hello", "Santa Cruz", "Tenerife", "La Orotava", "Puerto Cruz", "Spain"];
+console.log(ex45_two_words_array_1.default(ex45Words));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 46: Given an array of students objects (name and mark) show how many are approved and how many are suspended.
+console.log("Ex 46: Given an array of students objects (name and mark) show how many are approved and how many are suspended. \n" +
+    "---------------------------------------------------------------------------------------------------------------");
+const ex46Students = [
+    {
+        name: "Jose",
+        grade: 5
+    },
+    {
+        name: "Juan",
+        grade: 8
+    },
+    {
+        name: "Alexis",
+        grade: 3
+    },
+    {
+        name: "Enrique",
+        grade: 2
+    },
+    {
+        name: "Carlos",
+        grade: 5
+    },
+];
+console.log(ex46_approved_suspended_1.default(ex46Students));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 47: Given a string return all possible substrings.
+console.log("Ex 47: Given a string return all possible substrings. \n" +
+    "----------------------------------------------------");
+console.log(ex47_possible_substrings_1.default("Hola"));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

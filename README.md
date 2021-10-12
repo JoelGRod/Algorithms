@@ -88,3 +88,9 @@ Some logic problems with TypeScript. Practice purposes.
 * Ex 43: Given two numbers return an aleatory number between them
 
 * Ex 44: Given an array of numbers return the mean of the numbers
+
+* Ex 45: Given an array of strings return a new one only with values that have two words or more
+
+* Ex 46: Given an array of students objects (name and mark) show how many are approved and how many are suspended
+
+* Ex 47: Given a string return all possible substrings
