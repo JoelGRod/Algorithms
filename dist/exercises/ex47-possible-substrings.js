@@ -8,12 +8,12 @@ const getAllSubstrings = (text) => {
     //         substrings.push(text.substring(i, j));
     //     }
     // }
-    for (let i in text.split('')) {
-        let index = parseInt(i);
-        for (let j = 1; j <= text.length; j++) {
-            if (index >= j)
+    for (let index in text.split('')) {
+        let init = parseInt(index);
+        for (let end = 1; end <= text.length; end++) {
+            if (init >= end)
                 continue;
-            substrings.push(text.substring(index, j));
+            substrings.push(text.substring(init, end));
         }
     }
     return substrings;

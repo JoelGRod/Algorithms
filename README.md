@@ -94,3 +94,5 @@ Some logic problems with TypeScript. Practice purposes.
 * Ex 46: Given an array of students objects (name and mark) show how many are approved and how many are suspended
 
 * Ex 47: Given a string return all possible substrings
+
+* Ex 48: Given a users array return most common hobbies

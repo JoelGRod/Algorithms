@@ -10,11 +10,11 @@ const getAllSubstrings = (text: string): string[] => {
     //     }
     // }
 
-    for( let i in text.split('') ) {
-        let index = parseInt(i);
-        for( let j = 1; j <= text.length; j++ ) {
-            if(index >= j) continue;
-            substrings.push(text.substring(index, j));
+    for( let index in text.split('') ) {
+        let init = parseInt(index);
+        for( let end = 1; end <= text.length; end++ ) {
+            if(init >= end) continue;
+            substrings.push(text.substring(init, end));
         }
     }
     

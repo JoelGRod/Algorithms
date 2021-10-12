@@ -69,6 +69,7 @@ const ex44_numbers_mean_1 = __importDefault(require("./exercises/ex44-numbers-me
 const ex45_two_words_array_1 = __importDefault(require("./exercises/ex45-two-words-array"));
 const ex46_approved_suspended_1 = __importDefault(require("./exercises/ex46-approved-suspended"));
 const ex47_possible_substrings_1 = __importDefault(require("./exercises/ex47-possible-substrings"));
+const ex48_most_common_1 = __importDefault(require("./exercises/ex48-most-common"));
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -503,5 +504,38 @@ console.log('----------------------------------------------------------------');
 console.log("Ex 47: Given a string return all possible substrings. \n" +
     "----------------------------------------------------");
 console.log(ex47_possible_substrings_1.default("Hola"));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 48: Given a users array return most common hobbies.
+console.log("Ex 48: Given a users array return most common hobbies. \n" +
+    "-----------------------------------------------------");
+const ex48Users = [
+    {
+        name: "Jose",
+        hobbies: ["it", "sports", "videogames"]
+    },
+    {
+        name: "Eloisa",
+        hobbies: ["sports", "videogames"]
+    },
+    {
+        name: "Begoña",
+        hobbies: ["videogames", "sports", "music"]
+    },
+    {
+        name: "Ramon",
+        hobbies: ["it", "music"]
+    },
+    {
+        name: "Ana",
+        hobbies: ["music", "videogames"]
+    },
+    {
+        name: "Pedro",
+        hobbies: ["videogames", "sports"]
+    },
+];
+console.log(ex48_most_common_1.default(ex48Users));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
