@@ -95,4 +95,6 @@ Some logic problems with TypeScript. Practice purposes.
 
 * Ex 47: Given a string return all possible substrings
 
-* Ex 48: Given a users array return most common hobbies
+* Ex 48: Given an users array return most common hobbies
+
+* Ex 49: Given a string return characters that only appears once and the first one of them.

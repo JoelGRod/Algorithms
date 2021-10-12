@@ -70,6 +70,7 @@ const ex45_two_words_array_1 = __importDefault(require("./exercises/ex45-two-wor
 const ex46_approved_suspended_1 = __importDefault(require("./exercises/ex46-approved-suspended"));
 const ex47_possible_substrings_1 = __importDefault(require("./exercises/ex47-possible-substrings"));
 const ex48_most_common_1 = __importDefault(require("./exercises/ex48-most-common"));
+const ex49_characters_that_appears_once_1 = __importDefault(require("./exercises/ex49-characters-that-appears-once"));
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -537,5 +538,14 @@ const ex48Users = [
     },
 ];
 console.log(ex48_most_common_1.default(ex48Users));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 49: Given a string return characters that only appears once and the first one of them.
+console.log("Ex 49: Given a string return characters that only appears once and the first one of them too. \n" +
+    "-------------------------------------------------");
+const ex49text = "Hello MY name! is? i don't know...";
+const ex49text2 = "frase frase HOY";
+console.log(ex49_characters_that_appears_once_1.default(ex49text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

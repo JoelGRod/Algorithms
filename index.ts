@@ -47,6 +47,7 @@ import getTwoWordsValues from './exercises/ex45-two-words-array';
 import getApprovedAndFailed from './exercises/ex46-approved-suspended';
 import getAllSubstrings from './exercises/ex47-possible-substrings';
 import mostCommonHobbies from './exercises/ex48-most-common';
+import charactersAppearsOnce from './exercises/ex49-characters-that-appears-once';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -567,5 +568,15 @@ const ex48Users = [
     },
 ];
 console.log(mostCommonHobbies(ex48Users));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 49: Given a string return characters that only appears once and the first one of them.
+console.log("Ex 49: Given a string return characters that only appears once and the first one of them too. \n" +
+            "-------------------------------------------------");
+const ex49text = "Hello MY name! is? i don't know...";
+const ex49text2 = "frase frase HOY";
+console.log(charactersAppearsOnce(ex49text));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
