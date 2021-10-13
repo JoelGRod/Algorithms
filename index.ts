@@ -48,6 +48,9 @@ import getApprovedAndFailed from './exercises/ex46-approved-suspended';
 import getAllSubstrings from './exercises/ex47-possible-substrings';
 import mostCommonHobbies from './exercises/ex48-most-common';
 import charactersAppearsOnce from './exercises/ex49-characters-that-appears-once';
+import isPropertyInObject from './exercises/ex50-specific-object-property';
+import loopsInside from './exercises/ex51-loops-inside-number';
+import getEvenOdd from './exercises/ex52-even-odd-arrays';
 
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
@@ -269,7 +272,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 21: Given two string, check if the second one is an anagram of the first one
 console.log("Ex 21: Given two string, check if the second one is an anagram of the first one \n" +
-            "-------------------------------------------------------------------------------");
+    "-------------------------------------------------------------------------------");
 const ex21TextOne = "Sergio";
 const ex21TextTwo = "Riesgo";
 console.log(`${ex21TextOne} is an anagram of ${ex21TextTwo}? `, isAnagram(ex21TextOne, ex21TextTwo));
@@ -279,7 +282,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 22: Given a string and a number, returns the string with only the specified number of characters
 console.log("Ex 22: Given a string and a number, returns the string with only the specified number of characters \n" +
-            "---------------------------------------------------------------------------------------------------");
+    "---------------------------------------------------------------------------------------------------");
 const ex22text = "This is a test string for the exercise";
 const ex22number = 6;
 console.log(`The first ${ex22number} characters of "${ex22text}" are: `, cutText(ex22text, ex22number));
@@ -289,7 +292,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 23: Given a two numbers, define which is bigger and which is smaller
 console.log("Ex 23: Given a two numbers, define which is bigger and which is smaller \n" +
-            "-----------------------------------------------------------------------");
+    "-----------------------------------------------------------------------");
 const ex23digitOne = 18;
 const ex23digitTwo = 10;
 console.log(printBiggerSmaller(ex23digitOne, ex23digitTwo));
@@ -299,7 +302,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 24: Given a string, returns it converted to Title Case
 console.log("Ex 24: Given a string, returns it converted to Title Case \n" +
-            "---------------------------------------------------------");
+    "---------------------------------------------------------");
 const ex24Text: string = "this is a test string";
 console.log(toTitleCaseRegExp(ex24Text));
 console.log('----------------------------------------------------------------');
@@ -308,17 +311,17 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 25: Given a number array and a number, return true if the array values are a permutation of number, false otherwise.
 console.log("Ex 25: Given a number array and a number, return true if the array values are a permutation of number. \n" +
-            "------------------------------------------------------------------------------------------------------");
+    "------------------------------------------------------------------------------------------------------");
 const ex25Numberlist: number[] = [1, 2, 3, 4, 5, 6];
 const ex25Number: number = 6;
-console.log(`Number list: ${ex25Numberlist}: Number: ${ex25Number}:`,isPermutation(ex25Numberlist, ex25Number));
+console.log(`Number list: ${ex25Numberlist}: Number: ${ex25Number}:`, isPermutation(ex25Numberlist, ex25Number));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 
 // ------------------------------------------------------------------------------------- //
 // Ex 26: Given a text, return text to lowercase if the number of lowercase letters is greater than uppercase letters 
 console.log("Ex 26: Given a text, return text to lowercase if the number of lowercase letters is greater than uppercase letters. \n" +
-            "-------------------------------------------------------------------------------------------------------------------");
+    "-------------------------------------------------------------------------------------------------------------------");
 const ex26text: string = "THIS IS A TEST String";
 console.log(`Text: ${ex26text} -> `, toUpperOrLowerCase(ex26text));
 console.log(`Text: ${ex26text} -> `, toUpperOrLowerCaseAlt(ex26text));
@@ -328,7 +331,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 27: Given a number, return fibonacci sequence + result 
 console.log("Ex 27: Given a number, return fibonacci sequence + result. \n" +
-            "---------------------------------------------------------");
+    "---------------------------------------------------------");
 const ex27Digit: number = 10;
 console.log(fibonacci(ex27Digit));
 console.log(fiboRecursive(ex27Digit));
@@ -339,7 +342,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 28: Given a number (days), return years, months and days passed
 console.log("Ex 28: Given a number (days), return years, months and days passed. \n" +
-            "------------------------------------------------------------------");
+    "------------------------------------------------------------------");
 const ex28Digit: number = 920;
 console.log(getYearsMonthsDays(ex28Digit));
 console.log('----------------------------------------------------------------');
@@ -348,7 +351,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 29: Given a number return the factorial
 console.log("Ex 29: Given a number return the factorial. \n" +
-            "------------------------------------------");
+    "------------------------------------------");
 const ex29Digit: number = 10;
 console.log(factorial(ex29Digit));
 console.log(factorialRecursive(ex29Digit));
@@ -358,7 +361,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 30: Given a number return true if capicua, false otherwise
 console.log("Ex 30: Given a number return true if capicua, false otherwise. \n" +
-            "--------------------------------------------------------------------");
+    "--------------------------------------------------------------------");
 const ex30DigitCapicua: number = 1991;
 const ex30DigitNonCapicua: number = 2014;
 console.log(checkCapicua(ex30DigitCapicua));
@@ -369,7 +372,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 31: Given a number array return the same array without strings and duplicates
 console.log("Ex 31: Given a number array return the same array without strings and duplicates. \n" +
-            "--------------------------------------------------------------------------------");
+    "--------------------------------------------------------------------------------");
 const ex31list: any = [5, 5, 10000, 56000, "hello", 45, "Hi", "SOme string", 87, 56000, 45];
 console.log(removeDuplicatesAndStrings(ex31list));
 console.log('----------------------------------------------------------------');
@@ -378,7 +381,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 32: Given a number return what kind of angle represents
 console.log("Ex 32: Given a number return what kind of angle represents. \n" +
-            "-----------------------------------------------------------");
+    "-----------------------------------------------------------");
 const ex32Angle: number = 130;
 console.log(getAngle(ex32Angle));
 console.log('----------------------------------------------------------------');
@@ -387,7 +390,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 33: Given a number array return every number to the power of two
 console.log("Ex 33: Given a number array return every number to the power of two. \n" +
-            "--------------------------------------------------------------------");
+    "--------------------------------------------------------------------");
 const numberList: any[] = ["Hello", "John", 2, 5, 10, "Peter"];
 console.log(getSquaredList(numberList));
 console.log('----------------------------------------------------------------');
@@ -396,7 +399,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 34: Clock
 console.log("Ex 34: A clock. Non blocking function \n" +
-            "--------------------------------------------------------------------");
+    "--------------------------------------------------------------------");
 // const ex34Clock = new Clock();
 // ex34Clock.showClock();
 // setTimeout(() => {
@@ -408,15 +411,15 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 35: Basic math operations
 console.log("Ex 35: Given two numbers return basic math oprations ( + - * / ) between them. \n" +
-            "-----------------------------------------------------------------------------");
-console.log( basicMathOperations(5, 8));
+    "-----------------------------------------------------------------------------");
+console.log(basicMathOperations(5, 8));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 
 // ------------------------------------------------------------------------------------- //
 // Ex 36: Given an array return a new one with the first and last digit
 console.log("Ex 36: Given an array return a new one with the first and last digit. \n" +
-            "--------------------------------------------------------------------");
+    "--------------------------------------------------------------------");
 console.log(getFirstAndLast([100, 200, 300, 400, 500, 650, 700]));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -424,7 +427,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 37: Given a text return the number of consonants and vocals inside it.
 console.log("Ex 37: Given a text return the number of consonants and vocals inside it. \n" +
-            "------------------------------------------------------------------------");
+    "------------------------------------------------------------------------");
 // console.log(getVocalsAndConsonants("Pablito clavo Un clavito, cuantos clavitos clavo pablito áé12"));
 console.log(getVocalsAndConsonants("$·%&/()=^*¨Ç_:;jajojú!ª·$%-*/+pepé"));
 console.log('----------------------------------------------------------------');
@@ -433,7 +436,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 38: Given a text or an array return the element that appears the most.
 console.log("Ex 38: Given a text or an array return the element that appears the most. \n" +
-            "------------------------------------------------------------------------");
+    "------------------------------------------------------------------------");
 console.log(getElementWithMoreOccurrences("Hola, mejor que hola"));
 console.log(getElementWithMoreOccurrences([1, 2, 3, 5, 8, 2, 1, 3]));
 console.log('----------------------------------------------------------------');
@@ -442,7 +445,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 39: Given a number return the list with the squares of the natural numbers.
 console.log("Ex 39: Given a number return the list with the squares of the natural numbers. \n" +
-            "-----------------------------------------------------------------------------");
+    "-----------------------------------------------------------------------------");
 console.log(squareNumbers(8));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -450,7 +453,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 40: Given an email return true or false if is valid or not.
 console.log("Ex 40: Given an email return true or false if is valid or not. \n" +
-            "--------------------------------------------------------------");
+    "--------------------------------------------------------------");
 console.log("test@test.com: ", checkEmail("test@test.com"));
 console.log("test/test.com: ", checkEmail("test/test.com"));
 console.log('----------------------------------------------------------------');
@@ -459,7 +462,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 41: Given a number array return lower and higher value.
 console.log("Ex 41: Given a number array return lower and higher value. \n" +
-            "----------------------------------------------------------");
+    "----------------------------------------------------------");
 console.log(arrayLowerHigher([1, 5, 8, 24, 4, 3, 12, 23]));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -467,7 +470,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 42: Given a number return an asterisks triangle with n rows.
 console.log("Ex 42: Given a number return an asterisks triangle with n rows. \n" +
-            "--------------------------------------------------------------");
+    "--------------------------------------------------------------");
 console.log(asterisksTriangle(10));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -475,7 +478,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 43: Given two numbers return an aleatory number between them.
 console.log("Ex 43: Given two numbers return an aleatory number between them. \n" +
-            "---------------------------------------------------------------");
+    "---------------------------------------------------------------");
 console.log(aleatoryNumber(10, 20));
 console.log(aleatoryNumberFloat(10, 20));
 console.log('----------------------------------------------------------------');
@@ -484,8 +487,8 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 44: Given an array of numbers return the mean of the numbers.
 console.log("Ex 44: Given an array of numbers return the mean of the numbers. \n" +
-            "---------------------------------------------------------------");
-const ex44NumberArray = [10,10,10,5,10,5,10,5];
+    "---------------------------------------------------------------");
+const ex44NumberArray = [10, 10, 10, 5, 10, 5, 10, 5];
 console.log(getMean(...ex44NumberArray));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -493,7 +496,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 45: Given an array of strings return a new one only with values that have two words.
 console.log("Ex 45: Given an array of strings return a new one only with values that have two words. \n" +
-            "--------------------------------------------------------------------------------------");
+    "--------------------------------------------------------------------------------------");
 const ex45Words: string[] = ["Hello", "Santa Cruz", "Tenerife", "La Orotava", "Puerto Cruz", "Spain"];
 console.log(getTwoWordsValues(ex45Words));
 console.log('----------------------------------------------------------------');
@@ -502,7 +505,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 46: Given an array of students objects (name and mark) show how many are approved and how many are suspended.
 console.log("Ex 46: Given an array of students objects (name and mark) show how many are approved and how many are suspended. \n" +
-            "---------------------------------------------------------------------------------------------------------------");
+    "---------------------------------------------------------------------------------------------------------------");
 const ex46Students = [
     {
         name: "Jose",
@@ -532,7 +535,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 47: Given a string return all possible substrings.
 console.log("Ex 47: Given a string return all possible substrings. \n" +
-            "----------------------------------------------------");
+    "----------------------------------------------------");
 console.log(getAllSubstrings("Hola"));
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -540,7 +543,7 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 48: Given a users array return most common hobbies.
 console.log("Ex 48: Given a users array return most common hobbies. \n" +
-            "-----------------------------------------------------");
+    "-----------------------------------------------------");
 const ex48Users = [
     {
         name: "Jose",
@@ -574,9 +577,42 @@ console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
 // Ex 49: Given a string return characters that only appears once and the first one of them.
 console.log("Ex 49: Given a string return characters that only appears once and the first one of them too. \n" +
-            "-------------------------------------------------");
+    "-------------------------------------------------");
 const ex49text = "Hello MY name! is? i don't know...";
 const ex49text2 = "frase frase HOY";
 console.log(charactersAppearsOnce(ex49text));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 50: Given an object return true or false if it has an specific property.
+console.log("Ex 50: Given an object return true or false if it has an specific property. \n" +
+    "--------------------------------------------------------------------------");
+const ex50MyObject = {
+    name: "Fran",
+    lastname: "Glez",
+    phone: "555-555555"
+};
+console.log(isPropertyInObject(ex50MyObject, "lastname"));
+console.log(isPropertyInObject(ex50MyObject, "something"));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 51: Given a number return how many loops it has.
+console.log("Ex 51: Given a number return how many loops it has. \n" +
+    "----------------------------------------------------------");
+console.log(loopsInside())
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------------------- //
+// Ex 52: Given a number array return two new ones with even and odd.
+console.log("Ex 52: Given a number array return two new ones with even and odd. \n" +
+    "-------------------------------------------------------------------------");
+console.time();
+const ex52Numbers = [2, 3, 6, 70, 56, 43];
+console.log(getEvenOdd(ex52Numbers));
+console.timeEnd();
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

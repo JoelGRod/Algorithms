@@ -71,6 +71,9 @@ const ex46_approved_suspended_1 = __importDefault(require("./exercises/ex46-appr
 const ex47_possible_substrings_1 = __importDefault(require("./exercises/ex47-possible-substrings"));
 const ex48_most_common_1 = __importDefault(require("./exercises/ex48-most-common"));
 const ex49_characters_that_appears_once_1 = __importDefault(require("./exercises/ex49-characters-that-appears-once"));
+const ex50_specific_object_property_1 = __importDefault(require("./exercises/ex50-specific-object-property"));
+const ex51_loops_inside_number_1 = __importDefault(require("./exercises/ex51-loops-inside-number"));
+const ex52_even_odd_arrays_1 = __importDefault(require("./exercises/ex52-even-odd-arrays"));
 console.log("Job Interview exercises in TypeScript");
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //
@@ -547,5 +550,35 @@ console.log("Ex 49: Given a string return characters that only appears once and 
 const ex49text = "Hello MY name! is? i don't know...";
 const ex49text2 = "frase frase HOY";
 console.log(ex49_characters_that_appears_once_1.default(ex49text));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 50: Given an object return true or false if it has an specific property.
+console.log("Ex 50: Given an object return true or false if it has an specific property. \n" +
+    "--------------------------------------------------------------------------");
+const ex50MyObject = {
+    name: "Fran",
+    lastname: "Glez",
+    phone: "555-555555"
+};
+console.log(ex50_specific_object_property_1.default(ex50MyObject, "lastname"));
+console.log(ex50_specific_object_property_1.default(ex50MyObject, "something"));
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 51: Given a number return how many loops it has.
+console.log("Ex 51: Given a number return how many loops it has. \n" +
+    "----------------------------------------------------------");
+console.log(ex51_loops_inside_number_1.default());
+console.log('----------------------------------------------------------------');
+// ------------------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------------------- //
+// Ex 52: Given a number array return two new ones with even and odd.
+console.log("Ex 52: Given a number array return two new ones with even and odd. \n" +
+    "-------------------------------------------------------------------------");
+console.time();
+const ex52Numbers = [2, 3, 6, 70, 56, 43];
+console.log(ex52_even_odd_arrays_1.default(ex52Numbers));
+console.timeEnd();
 console.log('----------------------------------------------------------------');
 // ------------------------------------------------------------------------------------- //

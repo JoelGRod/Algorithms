@@ -97,4 +97,10 @@ Some logic problems with TypeScript. Practice purposes.
 
 * Ex 48: Given an users array return most common hobbies
 
-* Ex 49: Given a string return characters that only appears once and the first one of them.
+* Ex 49: Given a string return characters that only appears once and the first one of them
+
+* Ex 50: Given an object return true or false if it has an specific property
+
+* Ex 51: Given a number return how many loops it has
+
+* Ex 52: Given a number array return two new ones with even and odd
