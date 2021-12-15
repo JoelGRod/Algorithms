@@ -16,7 +16,7 @@
   "author": "Joel Glez Rod",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^26.0.24",
+    "@types/jest": "^27.0.3",
     "jest": "^27.0.6",
     "nodemon": "^2.0.12",
     "ts-jest": "^27.0.4",
