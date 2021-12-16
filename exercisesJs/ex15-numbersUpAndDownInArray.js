@@ -43,3 +43,12 @@ export default function checkSledJump(heights) {
 
   return result;
 }
+
+export function checkSledJumpExtra(heights) {
+  let result = false;
+  for(let i = 1; i < heights.length; i++) {
+    if(heights[i] < heights[i - 1]) result = true;
+    else if(heights[i - 1] === heights[i] || result) return false;
+  }
+  return result;
+}
