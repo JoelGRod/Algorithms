@@ -55,15 +55,19 @@
 export default function countPackages(carriers, carrierID) {
   // ¡No olvides compartir tu solución en redes!
   const carrier = carriers.find((carr) => carr[0] === carrierID);
-  return (carrier[1] + carrier[2].reduce(
-      (accum, current) => (accum += countPackages(carriers, current)),0));
+  return (
+    carrier[1] + carrier[2].reduce(
+      (accum, current) => (accum += countPackages(carriers, current)),0)
+  );
 }
 
-function countPackagesExtra (carriers, carrierID) {
-    let [, packages, otherCarriers] = carriers.find(el => el[0] === carrierID);
-    if (otherCarriers.length) {
-        const otherPackages = otherCarriers.map(carrier => countPackages(carriers,carrier));
-        packages += otherPackages.reduce((a, b) => a + b);
-    }
-    return packages
+export function countPackagesExtra(carriers, carrierID) {
+  let [, packages, otherCarriers] = carriers.find((el) => el[0] === carrierID);
+  if (otherCarriers.length) {
+    const otherPackages = otherCarriers.map((carrier) =>
+      countPackages(carriers, carrier)
+    );
+    packages += otherPackages.reduce((a, b) => a + b);
+  }
+  return packages;
 }
