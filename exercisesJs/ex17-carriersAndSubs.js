@@ -57,8 +57,7 @@ export default function countPackages(carriers, carrierID) {
   const carrier = carriers.find((carr) => carr[0] === carrierID);
   return (
     carrier[1] + carrier[2].reduce(
-      (accum, current) => (accum += countPackages(carriers, current)),0)
-  );
+      (accum, current) => (accum += countPackages(carriers, current)),0));
 }
 
 export function countPackagesExtra(carriers, carrierID) {
