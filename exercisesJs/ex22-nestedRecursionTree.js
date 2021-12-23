@@ -77,7 +77,10 @@ export default function countDecorations(bigTree) {
   const [value, left, right] = Object.values(bigTree);
   const sides = [left, right];
   return (
-    value + sides.reduce((accum, side) =>
-        side !== null ? (accum += countDecorations(side)) : (accum += 0),0)
+    value + sides.reduce((accum, side) => side !== null ? (accum += countDecorations(side)) : (accum += 0),0)
   );
+}
+
+export default function countDecorationsExtra(bigTree) {
+  return bigTree ? bigTree.value + countDecorations(bigTree.left) + countDecorations(bigTree.right) : 0;
 }
