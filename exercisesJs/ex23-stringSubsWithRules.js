@@ -63,3 +63,13 @@ export default function canReconfigure(from, to) {
   }
   return true;
 }
+
+export function canReconfigureBAD(from, to) {
+  return from.length === to.length && new Set([...from]).size === new Set([...to]).size;
+}
+
+export function canReconfigureBADTwo(from, to) {
+  let fromSet = new Set(from.split(''));
+  let toSet = new Set(to.split(''));
+  return from.length === to.length && fromSet.size === toSet.size;
+}
