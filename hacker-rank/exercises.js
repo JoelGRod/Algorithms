@@ -96,5 +96,11 @@ function timeConversion(s) {
 function findMedian(arr) {
   // Write your code here
   const sorted = arr.sort((a, b) => a - b);
+  return arr[(sorted.length - 1) / 2];
+}
+
+function findMedianExtra(arr) {
+  // Write your code here
+  const sorted = arr.sort((a, b) => a - b);
   return arr[parseInt(sorted.length / 2)];
 }
