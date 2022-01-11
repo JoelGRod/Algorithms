@@ -1,4 +1,5 @@
 /**
+ * Merge Two Sorted linked Lists
  * Given pointers to the heads of two sorted linked lists,
  * merge them into a single, sorted linked list.
  * Either head pointer may be null meaning that the corresponding
@@ -147,6 +148,7 @@ function processDataExtraTwo(input) {
  * Otherwise, return NO.
  */
 
+// A - Pretty but it not solves all test cases
 function isBalanced(s) {
   // Write your code here
   const brackets = "{}[]()<>";
@@ -160,6 +162,24 @@ function isBalanced(s) {
     } else {
       if (filo.shift() !== bracketIdx) return "NO";
     }
+  }
+  return "YES";
+}
+
+// B - Solves all test cases
+function isBalancedTwo(s) {
+  // Write your code here
+  const brackets = "{}[]()";
+  const filo = [];
+
+  for (let i = 0; i < s.length; i++) {
+      let bracketIdx = brackets.indexOf(s[i]);
+      if (bracketIdx === -1) continue;
+      if (bracketIdx % 2 === 0 && i < s.length - 1) {
+          filo.unshift(bracketIdx + 1);
+      } else {
+          if (filo.shift() !== bracketIdx) return "NO";
+      }
   }
   return "YES";
 }

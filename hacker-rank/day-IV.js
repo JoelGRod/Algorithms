@@ -1,4 +1,5 @@
 /**
+ * Grid Challenge
  * ALPHABETIC ORDER IN GRID
  * Given a square grid of characters in the range ascii[a-z],
  * rearrange elements of each row alphabetically, ascending.
@@ -57,6 +58,7 @@ function gridChallenge(grid) {
 }
 
 /**
+ * Recursive Digit Sum
  * SUPER DIGIT RECURSIVE
  * We define super digit of an integer x using the following rules:
  * Given an integer, we need to find the super digit of the integer.
@@ -95,6 +97,7 @@ function superDigit(n, k) {
 }
 
 /**
+ * New Year Chaos
  * FIND BRIBES in QUEUE
  * It is New Year's Day and people are in line for the
  * Wonderland rollercoaster ride. Each person wears a

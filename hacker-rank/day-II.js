@@ -1,4 +1,5 @@
 /**
+ * Lonely Integer
  * Given an array of integers, where all elements but one 
  * occur twice, find the unique element.
  * 
@@ -21,6 +22,7 @@
 }
 
 /**
+ * Diagonal Difference
  * Given a square matrix, calculate the absolute difference
  * between the sums of its diagonals.
  *
@@ -68,6 +70,7 @@ function diagonalDifference(arr) {
 }
 
 /**
+ * Counting Sort
  * Comparison Sorting
  * Quicksort usually has a running time of n * log(n), but is
  * there an algorithm that can sort even faster? In general,
