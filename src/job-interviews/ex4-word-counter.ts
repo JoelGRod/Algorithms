@@ -3,7 +3,7 @@
  * string.trim() string.split()
  */
 
-import { normalizeText } from "../shared/helpers/basic-helpers";
+import { normalizeText } from "../helpers/basic-helpers";
 
 export function countEspecificWord(text: string, wordToSearch: string): number {
 

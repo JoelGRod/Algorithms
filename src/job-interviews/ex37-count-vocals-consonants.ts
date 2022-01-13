@@ -1,4 +1,4 @@
-import { normalizeText } from "../shared/helpers/basic-helpers";
+import { normalizeText } from "../helpers/basic-helpers";
 
 interface Response {
     vocals: number;

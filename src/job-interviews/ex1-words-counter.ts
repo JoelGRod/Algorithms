@@ -3,7 +3,7 @@
  * We use string.split, string.toLowerCase, string.replace, string.trim and array.map
  */
 
-import { normalizeText } from "../shared/helpers/basic-helpers";
+import { normalizeText } from "../helpers/basic-helpers";
 
 const text_chain: string = "Hola, esto es un texto de prueba mediante el cual se " +
     "pretende contar cada una de las palabras que tiene y " +
