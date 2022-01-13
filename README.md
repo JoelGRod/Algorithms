@@ -1,4 +1,4 @@
-# Logic-Problems-Ts
+# Algorithms
 Some logic problems with TypeScript. Practice purposes.
 
 * Ex 1: Count words from pre-defined text
