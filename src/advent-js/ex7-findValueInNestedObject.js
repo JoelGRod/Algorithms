@@ -46,7 +46,7 @@
  */
 
 // Solución I
-export default function contains(store, product) {
+function contains(store, product) {
   // ¡Y no olvides compartir tu solución en redes!
   for (const key in store) {
     if (store[key] === product) return true;
@@ -59,7 +59,32 @@ export default function contains(store, product) {
 
 function containsTwo(store, product) {
   if (store && typeof store === "object") {
-    return Object.values(store).some((item) => contains(item, product));
+    return Object.values(store).some((item) => containsTwo(item, product));
   }
   return store === product;
 }
+
+const almacen = {
+  estanteria1: {
+    cajon1: {
+      producto1: "coca-cola",
+      producto2: "fanta",
+      producto3: "sprite",
+    },
+  },
+  estanteria2: {
+    cajon1: "vacio",
+    cajon2: {
+      producto1: "pantalones",
+      producto2: "camiseta", // <- ¡Está aquí!
+    },
+  },
+};
+
+console.time("startI");
+contains(almacen, "camiseta");
+console.timeEnd("startI");
+
+console.time("startII");
+containsTwo(almacen, "camiseta");
+console.timeEnd("startII");
