@@ -1,7 +1,7 @@
 {
   "name": "tech-interview",
   "version": "1.0.0",
-  "description": "Some tech problems from job interviews",
+  "description": "Algorithms and more",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
